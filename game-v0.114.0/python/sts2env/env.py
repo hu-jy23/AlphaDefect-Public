@@ -13,7 +13,7 @@ from .protocol import Obs, parse
 
 REPO = Path(__file__).resolve().parents[2]
 DEFAULT_DLL = REPO / "engine" / "Sts2Headless" / "bin" / "Release" / "net9.0" / "Sts2Headless.dll"
-DOTNET = Path.home() / ".dotnet" / "dotnet"
+DOTNET = Path(os.environ.get("DOTNET_ROOT", Path.home() / ".dotnet")) / "dotnet"
 # Rust 引擎（rust-engine/，`sts2-serve frames` 与 C# 的 serve 同协议）；租用机上放 musl 静态版，用 STS2_RUST_BIN 指定
 RUST_BIN = Path(os.environ.get("STS2_RUST_BIN", REPO / "rust-engine" / "target" / "release" / "sts2-serve"))
 ENGINES = ("csharp", "rust")

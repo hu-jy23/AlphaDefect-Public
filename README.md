@@ -111,3 +111,10 @@ The paper is [arXiv:2611.31076](https://arxiv.org/abs/2611.31076). See also [CIT
   url           = {https://arxiv.org/abs/2611.31076}
 }
 ```
+
+## Game policy optimization experiments in this fork
+
+This fork adds GRPO, DAPO and DSPO experiments for game v0.114.0. Each
+algorithm has its own branch (rl/grpo, rl/dapo, rl/dspo) and the same initial
+model. See [the experiment contract](docs/experiments/group_policy/Plan.md)
+for objectives, rewards, bounds and differences from the PPO recipe.
