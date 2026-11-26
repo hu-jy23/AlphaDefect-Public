@@ -1,0 +1,17 @@
+{
+  "grpo": {
+    "branch": "rl/grpo",
+    "server": "AutoDL RTX 3090",
+    "commit": "9969e5325479b3e9b40f501f8ddc260b4276ef28"
+  },
+  "dapo": {
+    "branch": "rl/dapo",
+    "server": "Primary RTX 3090",
+    "commit": "ef665e0e6969dd4dd3b7b58cba154d016ac629e2"
+  },
+  "dspo": {
+    "branch": "rl/dspo",
+    "server": "AutoDL RTX 3080 Ti",
+    "commit": "ca121c5b5fb9371ba02395992978f6b96efbf9bd"
+  }
+}

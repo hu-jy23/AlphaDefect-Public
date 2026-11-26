@@ -1,0 +1,4 @@
+rl/dapo
+ef665e0e6969dd4dd3b7b58cba154d016ac629e2
+4b6b71982f449e290f022c063b89714bbf140313f096e73f558e610166e9b55c  /root/autodl-tmp/alphadefect/src/game-v0.114.0/python/sts2rl/group_train.py
+NVIDIA GeForce RTX 3090, 14931 MiB, 24576 MiB

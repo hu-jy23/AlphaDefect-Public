@@ -1,0 +1,89 @@
+{
+  "grpo": {
+    "server": "AutoDL RTX 3090",
+    "branch": "rl/grpo",
+    "commit": "9969e5325479b3e9b40f501f8ddc260b4276ef28",
+    "checked_at": "2026-11-26T13:59:15.084957+08:00",
+    "counters": {
+      "updates": 40,
+      "sampled_decisions": 40559,
+      "trained_decisions": 40000,
+      "sampled_groups": 162,
+      "retained_groups": 162,
+      "rejected_groups": 0,
+      "next_seed": 162,
+      "elapsed_seconds": 305.1615748926997
+    },
+    "pid": 115849,
+    "finite": true,
+    "learner_alive": true,
+    "initial_sha256": "db5c88250286d4699cd76e6b61978c52d1ef9ca6773416e0515b48067d784cb5",
+    "torch": "2.8.0+cu128",
+    "checkpoint_version": 40,
+    "evaluation": {
+      "version": 13,
+      "games": 4,
+      "wins": 0,
+      "stuck": 0
+    },
+    "cuda_peak_reserved_bytes": 1308622848
+  },
+  "dapo": {
+    "server": "Primary RTX 3090",
+    "branch": "rl/dapo",
+    "commit": "ef665e0e6969dd4dd3b7b58cba154d016ac629e2",
+    "checked_at": "2026-11-26T13:59:13.832556+08:00",
+    "counters": {
+      "updates": 46,
+      "sampled_decisions": 47105,
+      "trained_decisions": 46306,
+      "sampled_groups": 192,
+      "retained_groups": 188,
+      "rejected_groups": 4,
+      "next_seed": 192,
+      "elapsed_seconds": 302.2785492800176
+    },
+    "pid": 2662829,
+    "finite": true,
+    "learner_alive": true,
+    "initial_sha256": "db5c88250286d4699cd76e6b61978c52d1ef9ca6773416e0515b48067d784cb5",
+    "torch": "2.9.0+cu128",
+    "checkpoint_version": 46,
+    "evaluation": {
+      "version": 16,
+      "games": 4,
+      "wins": 0,
+      "stuck": 0
+    },
+    "cuda_peak_reserved_bytes": 1220542464
+  },
+  "dspo": {
+    "server": "AutoDL RTX 3080 Ti",
+    "branch": "rl/dspo",
+    "commit": "ca121c5b5fb9371ba02395992978f6b96efbf9bd",
+    "checked_at": "2026-11-26T13:59:17.488969+08:00",
+    "counters": {
+      "updates": 35,
+      "sampled_decisions": 34585,
+      "trained_decisions": 33769,
+      "sampled_groups": 144,
+      "retained_groups": 142,
+      "rejected_groups": 2,
+      "next_seed": 144,
+      "elapsed_seconds": 307.1541529837996
+    },
+    "pid": 108639,
+    "finite": true,
+    "learner_alive": true,
+    "initial_sha256": "db5c88250286d4699cd76e6b61978c52d1ef9ca6773416e0515b48067d784cb5",
+    "torch": "2.9.0+cu128",
+    "checkpoint_version": 35,
+    "evaluation": {
+      "version": 11,
+      "games": 4,
+      "wins": 0,
+      "stuck": 0
+    },
+    "cuda_peak_reserved_bytes": 1193279488
+  }
+}

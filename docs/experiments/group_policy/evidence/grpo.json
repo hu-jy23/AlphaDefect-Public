@@ -1,0 +1,7760 @@
+{
+  "checked_unix": 1795672755.0849574,
+  "algorithm": "grpo",
+  "torch": "2.8.0+cu128",
+  "initial_sha256": "db5c88250286d4699cd76e6b61978c52d1ef9ca6773416e0515b48067d784cb5",
+  "smoke": {
+    "status": {
+      "status": "COMPLETE",
+      "stop_reason": "update_budget",
+      "algorithm": "grpo",
+      "time": 1795672394.1159508,
+      "pid": 115660,
+      "counters": {
+        "updates": 2,
+        "sampled_decisions": 1702,
+        "trained_decisions": 1702,
+        "sampled_groups": 8,
+        "retained_groups": 8,
+        "rejected_groups": 0,
+        "next_seed": 8,
+        "elapsed_seconds": 30.999267488718033
+      },
+      "initial_sha256": "db5c88250286d4699cd76e6b61978c52d1ef9ca6773416e0515b48067d784cb5",
+      "code_commit": "b7a4c19fc05afbb6d3613755b0d69c866984b41a",
+      "torch": "2.8.0+cu128",
+      "catalog_version": "v0.114.0"
+    },
+    "checkpoint_version": 2,
+    "checkpoint_sampled_decisions": 1702,
+    "checkpoint_bytes": 197480763,
+    "finite": true,
+    "max_parameter_change": 0.00033941547735594213,
+    "changed_tensors": 154,
+    "critic_head_weights_unchanged": true,
+    "optimizer_states": 125,
+    "muon_buffers": 44,
+    "updates": [
+      {
+        "time": 1795672318.9667263,
+        "algorithm": "grpo",
+        "version": 1,
+        "updates": 1,
+        "sampled_decisions": 844,
+        "trained_decisions": 844,
+        "sampled_groups": 4,
+        "retained_groups": 4,
+        "rejected_groups": 0,
+        "next_seed": 4,
+        "elapsed_seconds": 13.149303399026394,
+        "policy_loss": -0.0005510770715773106,
+        "reference_kl": 1.9941128832982142e-05,
+        "entropy": 1.3027012246479919,
+        "gradient_norm": 0.4366137236356735,
+        "trained_batch_decisions": 844,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 15.079300843179226,
+        "win_rate": 0.0,
+        "mean_floor": 3.9375,
+        "cuda_peak_allocated_bytes": 898213888,
+        "cuda_peak_reserved_bytes": 1027604480
+      },
+      {
+        "time": 1795672393.8784955,
+        "algorithm": "grpo",
+        "version": 2,
+        "updates": 2,
+        "sampled_decisions": 1702,
+        "trained_decisions": 1702,
+        "sampled_groups": 8,
+        "retained_groups": 8,
+        "rejected_groups": 0,
+        "next_seed": 8,
+        "elapsed_seconds": 28.756188683211803,
+        "policy_loss": -0.0005067549645900726,
+        "reference_kl": 0.0002235534650480986,
+        "entropy": 1.2554690598885774,
+        "gradient_norm": 0.4791683852672577,
+        "trained_batch_decisions": 858,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 15.453818947076797,
+        "win_rate": 0.0,
+        "mean_floor": 5.25,
+        "cuda_peak_allocated_bytes": 1014608896,
+        "cuda_peak_reserved_bytes": 1170210816
+      }
+    ],
+    "groups": [
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000000",
+        "rewards": [
+          0.04,
+          0.06,
+          0.06,
+          0.06
+        ],
+        "lengths": [
+          50,
+          46,
+          58,
+          44
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          4,
+          4,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.008660254037844385,
+        "version": 0,
+        "time": 1795672313.94606
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000001",
+        "rewards": [
+          0.04,
+          0.04,
+          0.12000000000000001,
+          0.08
+        ],
+        "lengths": [
+          54,
+          46,
+          92,
+          75
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          3,
+          7,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.033166247903554005,
+        "version": 0,
+        "time": 1795672313.9471874
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000002",
+        "rewards": [
+          0.02,
+          0.08,
+          0.1,
+          0.12000000000000001
+        ],
+        "lengths": [
+          31,
+          59,
+          65,
+          75
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          5,
+          6,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03741657386773942,
+        "version": 0,
+        "time": 1795672317.0301034
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000003",
+        "rewards": [
+          0.02,
+          0.02,
+          0.04,
+          0.04
+        ],
+        "lengths": [
+          28,
+          27,
+          47,
+          47
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          2,
+          3,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.01,
+        "version": 0,
+        "time": 1795672317.031285
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000004",
+        "rewards": [
+          0.04,
+          0.1,
+          0.1,
+          0.12000000000000001
+        ],
+        "lengths": [
+          36,
+          58,
+          66,
+          71
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          6,
+          6,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.030000000000000002,
+        "version": 1,
+        "time": 1795672387.6807947
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000005",
+        "rewards": [
+          0.1,
+          0.1,
+          0.06,
+          0.02
+        ],
+        "lengths": [
+          52,
+          38,
+          44,
+          18
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          6,
+          4,
+          2
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.033166247903554005,
+        "version": 1,
+        "time": 1795672387.681323
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000006",
+        "rewards": [
+          0.02,
+          0.06,
+          0.14,
+          0.1
+        ],
+        "lengths": [
+          24,
+          51,
+          69,
+          53
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          4,
+          8,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0447213595499958,
+        "version": 1,
+        "time": 1795672391.8723905
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000007",
+        "rewards": [
+          0.08,
+          0.08,
+          0.12000000000000001,
+          0.12000000000000001
+        ],
+        "lengths": [
+          87,
+          48,
+          67,
+          76
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          5,
+          7,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.020000000000000004,
+        "version": 1,
+        "time": 1795672391.8727586
+      }
+    ],
+    "resume_log": "RESUMED grpo update=1 sampled=844\n{\"time\": 1795672393.8784955, \"algorithm\": \"grpo\", \"version\": 2, \"updates\": 2, \"sampled_decisions\": 1702, \"trained_decisions\": 1702, \"sampled_groups\": 8, \"retained_groups\": 8, \"rejected_groups\": 0, \"next_seed\": 8, \"elapsed_seconds\": 28.756188683211803, \"policy_loss\": -0.0005067549645900726, \"reference_kl\": 0.0002235534650480986, \"entropy\": 1.2554690598885774, \"gradient_norm\": 0.4791683852672577, \"trained_batch_decisions\": 858, \"retained_batch_groups\": 4, \"attempted_batch_groups\": 4, \"batch_seconds\": 15.453818947076797, \"win_rate\": 0.0, \"mean_floor\": 5.25, \"cuda_peak_allocated_bytes\": 1014608896, \"cuda_peak_reserved_bytes\": 1170210816}\n"
+  },
+  "production": {
+    "status": {
+      "status": "RUNNING",
+      "stop_reason": null,
+      "algorithm": "grpo",
+      "time": 1795672754.9689665,
+      "pid": 115849,
+      "counters": {
+        "updates": 40,
+        "sampled_decisions": 40559,
+        "trained_decisions": 40000,
+        "sampled_groups": 162,
+        "retained_groups": 162,
+        "rejected_groups": 0,
+        "next_seed": 162,
+        "elapsed_seconds": 305.1615748926997
+      },
+      "initial_sha256": "db5c88250286d4699cd76e6b61978c52d1ef9ca6773416e0515b48067d784cb5",
+      "code_commit": "b7a4c19fc05afbb6d3613755b0d69c866984b41a",
+      "torch": "2.8.0+cu128",
+      "catalog_version": "v0.114.0"
+    },
+    "checkpoint_version": 40,
+    "checkpoint_sampled_decisions": 40000,
+    "checkpoint_bytes": 197480763,
+    "finite": true,
+    "max_parameter_change": 0.0054980251006782055,
+    "changed_tensors": 156,
+    "critic_head_weights_unchanged": true,
+    "optimizer_states": 125,
+    "muon_buffers": 44,
+    "updates": [
+      {
+        "time": 1795672464.4206629,
+        "algorithm": "grpo",
+        "version": 1,
+        "updates": 1,
+        "sampled_decisions": 844,
+        "trained_decisions": 844,
+        "sampled_groups": 4,
+        "retained_groups": 4,
+        "rejected_groups": 0,
+        "next_seed": 4,
+        "elapsed_seconds": 12.65090587735176,
+        "policy_loss": -0.0005506007000803947,
+        "reference_kl": 1.9914930233872787e-05,
+        "entropy": 1.302701268715881,
+        "gradient_norm": 0.4366738796234131,
+        "trained_batch_decisions": 844,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 14.607580445706844,
+        "win_rate": 0.0,
+        "mean_floor": 3.9375,
+        "cuda_peak_allocated_bytes": 898213888,
+        "cuda_peak_reserved_bytes": 1027604480
+      },
+      {
+        "time": 1795672472.3617594,
+        "algorithm": "grpo",
+        "version": 2,
+        "updates": 2,
+        "sampled_decisions": 1702,
+        "trained_decisions": 1702,
+        "sampled_groups": 8,
+        "retained_groups": 8,
+        "rejected_groups": 0,
+        "next_seed": 8,
+        "elapsed_seconds": 20.638280108571053,
+        "policy_loss": -0.0005082599818706512,
+        "reference_kl": 0.00022350560129780206,
+        "entropy": 1.2554691365826658,
+        "gradient_norm": 0.4791760891675949,
+        "trained_batch_decisions": 858,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.644209653139114,
+        "win_rate": 0.0,
+        "mean_floor": 5.25,
+        "cuda_peak_allocated_bytes": 904428032,
+        "cuda_peak_reserved_bytes": 1027604480
+      },
+      {
+        "time": 1795672478.5794861,
+        "algorithm": "grpo",
+        "version": 3,
+        "updates": 3,
+        "sampled_decisions": 2405,
+        "trained_decisions": 2405,
+        "sampled_groups": 12,
+        "retained_groups": 12,
+        "rejected_groups": 0,
+        "next_seed": 12,
+        "elapsed_seconds": 27.246680364012718,
+        "policy_loss": -0.0004470348358154297,
+        "reference_kl": 0.0007250224698509555,
+        "entropy": 1.2758915115725433,
+        "gradient_norm": 0.45875032246112823,
+        "trained_batch_decisions": 703,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 5.974512442946434,
+        "win_rate": 0.0,
+        "mean_floor": 3.8125,
+        "cuda_peak_allocated_bytes": 920877056,
+        "cuda_peak_reserved_bytes": 1184890880
+      },
+      {
+        "time": 1795672484.227246,
+        "algorithm": "grpo",
+        "version": 4,
+        "updates": 4,
+        "sampled_decisions": 3113,
+        "trained_decisions": 3113,
+        "sampled_groups": 16,
+        "retained_groups": 16,
+        "rejected_groups": 0,
+        "next_seed": 16,
+        "elapsed_seconds": 32.81257454305887,
+        "policy_loss": -0.0006906485068611801,
+        "reference_kl": 0.0015671779257218077,
+        "entropy": 1.2268894186801158,
+        "gradient_norm": 0.7774814665317535,
+        "trained_batch_decisions": 708,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 5.397159896790981,
+        "win_rate": 0.0,
+        "mean_floor": 3.9375,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1231028224
+      },
+      {
+        "time": 1795672491.687601,
+        "algorithm": "grpo",
+        "version": 5,
+        "updates": 5,
+        "sampled_decisions": 3946,
+        "trained_decisions": 3946,
+        "sampled_groups": 20,
+        "retained_groups": 20,
+        "rejected_groups": 0,
+        "next_seed": 20,
+        "elapsed_seconds": 40.05603876709938,
+        "policy_loss": -0.000504913303302601,
+        "reference_kl": 0.0021345021541492315,
+        "entropy": 1.2435579838014308,
+        "gradient_norm": 0.5319837629795074,
+        "trained_batch_decisions": 833,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.1641286090016365,
+        "win_rate": 0.0,
+        "mean_floor": 4.0625,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1231028224
+      },
+      {
+        "time": 1795672499.2289202,
+        "algorithm": "grpo",
+        "version": 6,
+        "updates": 6,
+        "sampled_decisions": 4789,
+        "trained_decisions": 4789,
+        "sampled_groups": 24,
+        "retained_groups": 24,
+        "rejected_groups": 0,
+        "next_seed": 24,
+        "elapsed_seconds": 47.52186595648527,
+        "policy_loss": -0.0004562055692076683,
+        "reference_kl": 0.0032409201103291707,
+        "entropy": 1.237585184271508,
+        "gradient_norm": 0.5330221354961395,
+        "trained_batch_decisions": 843,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.315930895507336,
+        "win_rate": 0.0,
+        "mean_floor": 4.75,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1256194048
+      },
+      {
+        "time": 1795672506.0752637,
+        "algorithm": "grpo",
+        "version": 7,
+        "updates": 7,
+        "sampled_decisions": 5633,
+        "trained_decisions": 5633,
+        "sampled_groups": 28,
+        "retained_groups": 28,
+        "rejected_groups": 0,
+        "next_seed": 28,
+        "elapsed_seconds": 54.26758240163326,
+        "policy_loss": -2.4667475372552872e-05,
+        "reference_kl": 0.004443612891918747,
+        "entropy": 1.292556722017261,
+        "gradient_norm": 0.1921732798218727,
+        "trained_batch_decisions": 844,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 6.624021023511887,
+        "win_rate": 0.0,
+        "mean_floor": 4.3125,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672513.4956686,
+        "algorithm": "grpo",
+        "version": 8,
+        "updates": 8,
+        "sampled_decisions": 6520,
+        "trained_decisions": 6520,
+        "sampled_groups": 32,
+        "retained_groups": 32,
+        "rejected_groups": 0,
+        "next_seed": 32,
+        "elapsed_seconds": 61.924086555838585,
+        "policy_loss": -0.0003027000930160284,
+        "reference_kl": 0.005817109682539012,
+        "entropy": 1.2629376898489244,
+        "gradient_norm": 0.4082261919975281,
+        "trained_batch_decisions": 887,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.169674105942249,
+        "win_rate": 0.0,
+        "mean_floor": 5.4375,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672519.601578,
+        "algorithm": "grpo",
+        "version": 9,
+        "updates": 9,
+        "sampled_decisions": 7304,
+        "trained_decisions": 7304,
+        "sampled_groups": 36,
+        "retained_groups": 36,
+        "rejected_groups": 0,
+        "next_seed": 36,
+        "elapsed_seconds": 68.07900165766478,
+        "policy_loss": -0.00041044969111680984,
+        "reference_kl": 0.006698326865262061,
+        "entropy": 1.2201413220288801,
+        "gradient_norm": 0.5001758188009262,
+        "trained_batch_decisions": 784,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 5.868898719549179,
+        "win_rate": 0.0,
+        "mean_floor": 5.125,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672526.7392771,
+        "algorithm": "grpo",
+        "version": 10,
+        "updates": 10,
+        "sampled_decisions": 8289,
+        "trained_decisions": 8289,
+        "sampled_groups": 40,
+        "retained_groups": 40,
+        "rejected_groups": 0,
+        "next_seed": 40,
+        "elapsed_seconds": 74.85779221355915,
+        "policy_loss": -0.00025955680757761,
+        "reference_kl": 0.007667832971492317,
+        "entropy": 1.2066569981841266,
+        "gradient_norm": 0.2874683439731598,
+        "trained_batch_decisions": 985,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 6.9062948152422905,
+        "win_rate": 0.0,
+        "mean_floor": 5.4375,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672532.4713488,
+        "algorithm": "grpo",
+        "version": 11,
+        "updates": 11,
+        "sampled_decisions": 9125,
+        "trained_decisions": 9125,
+        "sampled_groups": 44,
+        "retained_groups": 44,
+        "rejected_groups": 0,
+        "next_seed": 44,
+        "elapsed_seconds": 80.9742625579238,
+        "policy_loss": -0.0004171737818978727,
+        "reference_kl": 0.010434908293973422,
+        "entropy": 1.1639416166469811,
+        "gradient_norm": 0.5089545249938965,
+        "trained_batch_decisions": 836,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 5.502509035170078,
+        "win_rate": 0.0,
+        "mean_floor": 5.0625,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672538.3980186,
+        "algorithm": "grpo",
+        "version": 12,
+        "updates": 12,
+        "sampled_decisions": 9978,
+        "trained_decisions": 9978,
+        "sampled_groups": 48,
+        "retained_groups": 48,
+        "rejected_groups": 0,
+        "next_seed": 48,
+        "elapsed_seconds": 86.72310668230057,
+        "policy_loss": -0.0002386828709859401,
+        "reference_kl": 0.012978934886632487,
+        "entropy": 1.1930486538206146,
+        "gradient_norm": 0.2285253405570984,
+        "trained_batch_decisions": 853,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 5.706942975521088,
+        "win_rate": 0.0,
+        "mean_floor": 5.0,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672546.1686482,
+        "algorithm": "grpo",
+        "version": 13,
+        "updates": 13,
+        "sampled_decisions": 10978,
+        "trained_decisions": 10978,
+        "sampled_groups": 52,
+        "retained_groups": 52,
+        "rejected_groups": 0,
+        "next_seed": 52,
+        "elapsed_seconds": 94.19734112173319,
+        "policy_loss": -0.00030828313902020454,
+        "reference_kl": 0.013356334951822646,
+        "entropy": 1.209103618621826,
+        "gradient_norm": 0.34843721985816956,
+        "trained_batch_decisions": 1000,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.489192798733711,
+        "win_rate": 0.0,
+        "mean_floor": 5.625,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672553.13102,
+        "algorithm": "grpo",
+        "version": 14,
+        "updates": 14,
+        "sampled_decisions": 11830,
+        "trained_decisions": 11830,
+        "sampled_groups": 56,
+        "retained_groups": 56,
+        "rejected_groups": 0,
+        "next_seed": 56,
+        "elapsed_seconds": 101.4067237302661,
+        "policy_loss": -0.0003226319095119834,
+        "reference_kl": 0.015842200853512622,
+        "entropy": 1.205617200600709,
+        "gradient_norm": 0.366328164935112,
+        "trained_batch_decisions": 852,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 6.676390320062637,
+        "win_rate": 0.0,
+        "mean_floor": 5.25,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672561.037819,
+        "algorithm": "grpo",
+        "version": 15,
+        "updates": 15,
+        "sampled_decisions": 12827,
+        "trained_decisions": 12827,
+        "sampled_groups": 60,
+        "retained_groups": 60,
+        "rejected_groups": 0,
+        "next_seed": 60,
+        "elapsed_seconds": 109.14141464233398,
+        "policy_loss": -0.0003999900072813034,
+        "reference_kl": 0.01788421894161729,
+        "entropy": 1.1779403342167614,
+        "gradient_norm": 0.48151539266109467,
+        "trained_batch_decisions": 997,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.6198656260967255,
+        "win_rate": 0.0,
+        "mean_floor": 5.375,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672569.0110822,
+        "algorithm": "grpo",
+        "version": 16,
+        "updates": 16,
+        "sampled_decisions": 13873,
+        "trained_decisions": 13873,
+        "sampled_groups": 64,
+        "retained_groups": 64,
+        "rejected_groups": 0,
+        "next_seed": 64,
+        "elapsed_seconds": 116.86992712318897,
+        "policy_loss": -0.0002794052707031369,
+        "reference_kl": 0.017305395827861503,
+        "entropy": 1.2304019599754086,
+        "gradient_norm": 0.27696214616298676,
+        "trained_batch_decisions": 1046,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.736322022974491,
+        "win_rate": 0.0,
+        "mean_floor": 5.5,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672576.595531,
+        "algorithm": "grpo",
+        "version": 17,
+        "updates": 17,
+        "sampled_decisions": 14847,
+        "trained_decisions": 14847,
+        "sampled_groups": 68,
+        "retained_groups": 68,
+        "rejected_groups": 0,
+        "next_seed": 68,
+        "elapsed_seconds": 124.58270174264908,
+        "policy_loss": -0.00015442445874214172,
+        "reference_kl": 0.022926587786059827,
+        "entropy": 1.2184224349027786,
+        "gradient_norm": 0.19591795653104782,
+        "trained_batch_decisions": 974,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.358554556965828,
+        "win_rate": 0.0,
+        "mean_floor": 5.75,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672583.334252,
+        "algorithm": "grpo",
+        "version": 18,
+        "updates": 18,
+        "sampled_decisions": 15714,
+        "trained_decisions": 15714,
+        "sampled_groups": 72,
+        "retained_groups": 72,
+        "rejected_groups": 0,
+        "next_seed": 72,
+        "elapsed_seconds": 131.65013837069273,
+        "policy_loss": -0.000309615395963192,
+        "reference_kl": 0.02641534968279302,
+        "entropy": 1.2122557836970382,
+        "gradient_norm": 0.30921630561351776,
+        "trained_batch_decisions": 867,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 6.454210996627808,
+        "win_rate": 0.0,
+        "mean_floor": 4.625,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672591.275573,
+        "algorithm": "grpo",
+        "version": 19,
+        "updates": 19,
+        "sampled_decisions": 16777,
+        "trained_decisions": 16777,
+        "sampled_groups": 76,
+        "retained_groups": 76,
+        "rejected_groups": 0,
+        "next_seed": 76,
+        "elapsed_seconds": 139.20993097871542,
+        "policy_loss": -0.00017857388593256474,
+        "reference_kl": 0.024368717640754767,
+        "entropy": 1.2095102559589375,
+        "gradient_norm": 0.19766968488693237,
+        "trained_batch_decisions": 1063,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.714332200586796,
+        "win_rate": 0.0,
+        "mean_floor": 7.0625,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672598.422366,
+        "algorithm": "grpo",
+        "version": 20,
+        "updates": 20,
+        "sampled_decisions": 17844,
+        "trained_decisions": 17844,
+        "sampled_groups": 80,
+        "retained_groups": 80,
+        "rejected_groups": 0,
+        "next_seed": 80,
+        "elapsed_seconds": 146.33145239949226,
+        "policy_loss": -0.0001015558373183012,
+        "reference_kl": 0.028531813382869586,
+        "entropy": 1.187142380175461,
+        "gradient_norm": 0.14584913849830627,
+        "trained_batch_decisions": 1067,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 6.932745605707169,
+        "win_rate": 0.0,
+        "mean_floor": 6.0625,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672605.4870842,
+        "algorithm": "grpo",
+        "version": 21,
+        "updates": 21,
+        "sampled_decisions": 18731,
+        "trained_decisions": 18731,
+        "sampled_groups": 84,
+        "retained_groups": 84,
+        "rejected_groups": 0,
+        "next_seed": 84,
+        "elapsed_seconds": 153.77190830558538,
+        "policy_loss": -0.00041025178506970406,
+        "reference_kl": 0.037783073930768296,
+        "entropy": 1.2170372267317746,
+        "gradient_norm": 0.4886729568243027,
+        "trained_batch_decisions": 887,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 6.841770805418491,
+        "win_rate": 0.0,
+        "mean_floor": 5.3125,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672612.5127287,
+        "algorithm": "grpo",
+        "version": 22,
+        "updates": 22,
+        "sampled_decisions": 19693,
+        "trained_decisions": 19693,
+        "sampled_groups": 88,
+        "retained_groups": 88,
+        "rejected_groups": 0,
+        "next_seed": 88,
+        "elapsed_seconds": 160.6515924334526,
+        "policy_loss": -0.0005727162933908403,
+        "reference_kl": 0.038684036225490104,
+        "entropy": 1.202721166139829,
+        "gradient_norm": 0.6204228699207306,
+        "trained_batch_decisions": 962,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 6.801682658493519,
+        "win_rate": 0.0,
+        "mean_floor": 5.4375,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672620.4234772,
+        "algorithm": "grpo",
+        "version": 23,
+        "updates": 23,
+        "sampled_decisions": 20852,
+        "trained_decisions": 20852,
+        "sampled_groups": 92,
+        "retained_groups": 92,
+        "rejected_groups": 0,
+        "next_seed": 92,
+        "elapsed_seconds": 167.98795682936907,
+        "policy_loss": -7.612071931362152e-05,
+        "reference_kl": 0.033060499605198856,
+        "entropy": 1.1692206055260197,
+        "gradient_norm": 0.17166348546743393,
+        "trained_batch_decisions": 1159,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.686874061822891,
+        "win_rate": 0.0,
+        "mean_floor": 6.625,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672627.869161,
+        "algorithm": "grpo",
+        "version": 24,
+        "updates": 24,
+        "sampled_decisions": 21930,
+        "trained_decisions": 21930,
+        "sampled_groups": 96,
+        "retained_groups": 96,
+        "rejected_groups": 0,
+        "next_seed": 96,
+        "elapsed_seconds": 175.7319622039795,
+        "policy_loss": -4.974217154085636e-05,
+        "reference_kl": 0.037935737636871636,
+        "entropy": 1.1226066136404402,
+        "gradient_norm": 0.1559840440750122,
+        "trained_batch_decisions": 1078,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.220673494040966,
+        "win_rate": 0.0,
+        "mean_floor": 6.75,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672635.5042472,
+        "algorithm": "grpo",
+        "version": 25,
+        "updates": 25,
+        "sampled_decisions": 23077,
+        "trained_decisions": 23077,
+        "sampled_groups": 100,
+        "retained_groups": 100,
+        "rejected_groups": 0,
+        "next_seed": 100,
+        "elapsed_seconds": 183.1911230161786,
+        "policy_loss": -0.00023294240236282349,
+        "reference_kl": 0.04097432905109599,
+        "entropy": 1.1520026322541908,
+        "gradient_norm": 0.25806547701358795,
+        "trained_batch_decisions": 1147,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.398878715932369,
+        "win_rate": 0.0,
+        "mean_floor": 6.625,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672642.1214664,
+        "algorithm": "grpo",
+        "version": 26,
+        "updates": 26,
+        "sampled_decisions": 23960,
+        "trained_decisions": 23960,
+        "sampled_groups": 104,
+        "retained_groups": 104,
+        "rejected_groups": 0,
+        "next_seed": 104,
+        "elapsed_seconds": 190.38799645006657,
+        "policy_loss": -0.00024598860181868076,
+        "reference_kl": 0.05411677164374851,
+        "entropy": 1.1645991691511592,
+        "gradient_norm": 0.3245883136987686,
+        "trained_batch_decisions": 883,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 6.390282653272152,
+        "win_rate": 0.0,
+        "mean_floor": 5.125,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672649.940505,
+        "algorithm": "grpo",
+        "version": 27,
+        "updates": 27,
+        "sampled_decisions": 25064,
+        "trained_decisions": 25064,
+        "sampled_groups": 108,
+        "retained_groups": 108,
+        "rejected_groups": 0,
+        "next_seed": 108,
+        "elapsed_seconds": 197.6799066066742,
+        "policy_loss": -0.00018501700833439827,
+        "reference_kl": 0.04658645385643467,
+        "entropy": 1.1611961039943972,
+        "gradient_norm": 0.20323365926742554,
+        "trained_batch_decisions": 1104,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.576802372932434,
+        "win_rate": 0.0,
+        "mean_floor": 6.75,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672658.3743591,
+        "algorithm": "grpo",
+        "version": 28,
+        "updates": 28,
+        "sampled_decisions": 26271,
+        "trained_decisions": 26271,
+        "sampled_groups": 112,
+        "retained_groups": 112,
+        "rejected_groups": 0,
+        "next_seed": 112,
+        "elapsed_seconds": 205.9153884202242,
+        "policy_loss": -0.00014290143735706806,
+        "reference_kl": 0.051534070866182446,
+        "entropy": 1.164906812287009,
+        "gradient_norm": 0.25391994416713715,
+        "trained_batch_decisions": 1207,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 8.210561409592628,
+        "win_rate": 0.0,
+        "mean_floor": 6.875,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672665.2373672,
+        "algorithm": "grpo",
+        "version": 29,
+        "updates": 29,
+        "sampled_decisions": 27282,
+        "trained_decisions": 27282,
+        "sampled_groups": 116,
+        "retained_groups": 116,
+        "rejected_groups": 0,
+        "next_seed": 116,
+        "elapsed_seconds": 213.2211597263813,
+        "policy_loss": -9.161978960037231e-05,
+        "reference_kl": 0.05083510070107877,
+        "entropy": 1.1232304049528672,
+        "gradient_norm": 0.1740342080593109,
+        "trained_batch_decisions": 1011,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 6.626826599240303,
+        "win_rate": 0.0,
+        "mean_floor": 6.25,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672672.9880598,
+        "algorithm": "grpo",
+        "version": 30,
+        "updates": 30,
+        "sampled_decisions": 28380,
+        "trained_decisions": 28380,
+        "sampled_groups": 120,
+        "retained_groups": 120,
+        "rejected_groups": 0,
+        "next_seed": 120,
+        "elapsed_seconds": 220.79901663213968,
+        "policy_loss": -0.00014841568190604448,
+        "reference_kl": 0.058087377779884264,
+        "entropy": 1.1075149242560935,
+        "gradient_norm": 0.19539719074964523,
+        "trained_batch_decisions": 1098,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.524554580450058,
+        "win_rate": 0.0,
+        "mean_floor": 6.4375,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672681.2008023,
+        "algorithm": "grpo",
+        "version": 31,
+        "updates": 31,
+        "sampled_decisions": 29527,
+        "trained_decisions": 29527,
+        "sampled_groups": 124,
+        "retained_groups": 124,
+        "rejected_groups": 0,
+        "next_seed": 124,
+        "elapsed_seconds": 228.9060310870409,
+        "policy_loss": -0.00015520909801125526,
+        "reference_kl": 0.05970516364322975,
+        "entropy": 1.090464685933945,
+        "gradient_norm": 0.17315156012773514,
+        "trained_batch_decisions": 1147,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.9329043328762054,
+        "win_rate": 0.0,
+        "mean_floor": 6.875,
+        "cuda_peak_allocated_bytes": 943254528,
+        "cuda_peak_reserved_bytes": 1258291200
+      },
+      {
+        "time": 1795672689.5001595,
+        "algorithm": "grpo",
+        "version": 32,
+        "updates": 32,
+        "sampled_decisions": 30719,
+        "trained_decisions": 30719,
+        "sampled_groups": 128,
+        "retained_groups": 128,
+        "rejected_groups": 0,
+        "next_seed": 128,
+        "elapsed_seconds": 237.08966992795467,
+        "policy_loss": -0.00015989295206964016,
+        "reference_kl": 0.07420183467911556,
+        "entropy": 1.1042098582991016,
+        "gradient_norm": 0.28543607890605927,
+        "trained_batch_decisions": 1192,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.924025572836399,
+        "win_rate": 0.0,
+        "mean_floor": 6.4375,
+        "cuda_peak_allocated_bytes": 974504448,
+        "cuda_peak_reserved_bytes": 1306525696
+      },
+      {
+        "time": 1795672697.1201086,
+        "algorithm": "grpo",
+        "version": 33,
+        "updates": 33,
+        "sampled_decisions": 31885,
+        "trained_decisions": 31885,
+        "sampled_groups": 132,
+        "retained_groups": 132,
+        "rejected_groups": 0,
+        "next_seed": 132,
+        "elapsed_seconds": 244.76156670600176,
+        "policy_loss": -0.00018440792337059975,
+        "reference_kl": 0.06568789191078395,
+        "entropy": 1.1203890901895983,
+        "gradient_norm": 0.2646775096654892,
+        "trained_batch_decisions": 1166,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.4003171771764755,
+        "win_rate": 0.0,
+        "mean_floor": 6.3125,
+        "cuda_peak_allocated_bytes": 974504448,
+        "cuda_peak_reserved_bytes": 1308622848
+      },
+      {
+        "time": 1795672704.4748273,
+        "algorithm": "grpo",
+        "version": 34,
+        "updates": 34,
+        "sampled_decisions": 32983,
+        "trained_decisions": 32983,
+        "sampled_groups": 136,
+        "retained_groups": 136,
+        "rejected_groups": 0,
+        "next_seed": 136,
+        "elapsed_seconds": 252.18196888267994,
+        "policy_loss": -0.00013323803432285786,
+        "reference_kl": 0.062498359257006086,
+        "entropy": 1.078454090163573,
+        "gradient_norm": 0.2422659993171692,
+        "trained_batch_decisions": 1098,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.126373082399368,
+        "win_rate": 0.0,
+        "mean_floor": 6.6875,
+        "cuda_peak_allocated_bytes": 974504448,
+        "cuda_peak_reserved_bytes": 1308622848
+      },
+      {
+        "time": 1795672713.4657147,
+        "algorithm": "grpo",
+        "version": 35,
+        "updates": 35,
+        "sampled_decisions": 34175,
+        "trained_decisions": 34175,
+        "sampled_groups": 140,
+        "retained_groups": 140,
+        "rejected_groups": 0,
+        "next_seed": 140,
+        "elapsed_seconds": 261.06264700740576,
+        "policy_loss": -0.00016760628204792738,
+        "reference_kl": 0.06683486694237217,
+        "entropy": 1.1196235618335288,
+        "gradient_norm": 0.23450270295143127,
+        "trained_batch_decisions": 1192,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 8.767424888908863,
+        "win_rate": 0.0,
+        "mean_floor": 6.6875,
+        "cuda_peak_allocated_bytes": 974504448,
+        "cuda_peak_reserved_bytes": 1308622848
+      },
+      {
+        "time": 1795672723.1096256,
+        "algorithm": "grpo",
+        "version": 36,
+        "updates": 36,
+        "sampled_decisions": 35555,
+        "trained_decisions": 35555,
+        "sampled_groups": 144,
+        "retained_groups": 144,
+        "rejected_groups": 0,
+        "next_seed": 144,
+        "elapsed_seconds": 270.62959987670183,
+        "policy_loss": -0.00013068551197648048,
+        "reference_kl": 0.06339311401825398,
+        "entropy": 1.126361816516821,
+        "gradient_norm": 0.14361927658319473,
+        "trained_batch_decisions": 1380,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 9.426307044923306,
+        "win_rate": 0.0,
+        "mean_floor": 7.4375,
+        "cuda_peak_allocated_bytes": 974504448,
+        "cuda_peak_reserved_bytes": 1308622848
+      },
+      {
+        "time": 1795672730.822244,
+        "algorithm": "grpo",
+        "version": 37,
+        "updates": 37,
+        "sampled_decisions": 36701,
+        "trained_decisions": 36701,
+        "sampled_groups": 148,
+        "retained_groups": 148,
+        "rejected_groups": 0,
+        "next_seed": 148,
+        "elapsed_seconds": 278.51462077349424,
+        "policy_loss": -0.00013347063213586807,
+        "reference_kl": 0.08094628504477441,
+        "entropy": 1.0694272339240003,
+        "gradient_norm": 0.1481417641043663,
+        "trained_batch_decisions": 1146,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.495410427451134,
+        "win_rate": 0.0,
+        "mean_floor": 6.4375,
+        "cuda_peak_allocated_bytes": 974504448,
+        "cuda_peak_reserved_bytes": 1308622848
+      },
+      {
+        "time": 1795672738.496556,
+        "algorithm": "grpo",
+        "version": 38,
+        "updates": 38,
+        "sampled_decisions": 37955,
+        "trained_decisions": 37955,
+        "sampled_groups": 152,
+        "retained_groups": 152,
+        "rejected_groups": 0,
+        "next_seed": 152,
+        "elapsed_seconds": 286.12407076358795,
+        "policy_loss": -3.470818046480417e-05,
+        "reference_kl": 0.07126333095948212,
+        "entropy": 1.0580925523189073,
+        "gradient_norm": 0.3047221153974533,
+        "trained_batch_decisions": 1254,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 7.450794704258442,
+        "win_rate": 0.0,
+        "mean_floor": 7.4375,
+        "cuda_peak_allocated_bytes": 974504448,
+        "cuda_peak_reserved_bytes": 1308622848
+      },
+      {
+        "time": 1795672745.2503526,
+        "algorithm": "grpo",
+        "version": 39,
+        "updates": 39,
+        "sampled_decisions": 39002,
+        "trained_decisions": 39002,
+        "sampled_groups": 156,
+        "retained_groups": 156,
+        "rejected_groups": 0,
+        "next_seed": 156,
+        "elapsed_seconds": 293.55014177411795,
+        "policy_loss": -0.00012517243158072233,
+        "reference_kl": 0.07867202640045434,
+        "entropy": 1.1144313939776782,
+        "gradient_norm": 0.22599685937166214,
+        "trained_batch_decisions": 1047,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 6.542603865265846,
+        "win_rate": 0.0,
+        "mean_floor": 6.625,
+        "cuda_peak_allocated_bytes": 974504448,
+        "cuda_peak_reserved_bytes": 1308622848
+      },
+      {
+        "time": 1795672751.9597406,
+        "algorithm": "grpo",
+        "version": 40,
+        "updates": 40,
+        "sampled_decisions": 40000,
+        "trained_decisions": 40000,
+        "sampled_groups": 160,
+        "retained_groups": 160,
+        "rejected_groups": 0,
+        "next_seed": 160,
+        "elapsed_seconds": 300.10454807430506,
+        "policy_loss": -0.00025748275220394135,
+        "reference_kl": 0.0839377858210355,
+        "entropy": 1.0758313807791362,
+        "gradient_norm": 0.33850623667240143,
+        "trained_batch_decisions": 998,
+        "retained_batch_groups": 4,
+        "attempted_batch_groups": 4,
+        "batch_seconds": 6.503749541938305,
+        "win_rate": 0.0,
+        "mean_floor": 5.8125,
+        "cuda_peak_allocated_bytes": 974504448,
+        "cuda_peak_reserved_bytes": 1308622848
+      }
+    ],
+    "groups": [
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000000",
+        "rewards": [
+          0.04,
+          0.06,
+          0.06,
+          0.06
+        ],
+        "lengths": [
+          50,
+          46,
+          58,
+          44
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          4,
+          4,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.008660254037844385,
+        "version": 0,
+        "time": 1795672459.2765071
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000001",
+        "rewards": [
+          0.04,
+          0.04,
+          0.12000000000000001,
+          0.08
+        ],
+        "lengths": [
+          54,
+          46,
+          92,
+          75
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          3,
+          7,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.033166247903554005,
+        "version": 0,
+        "time": 1795672459.2770066
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000002",
+        "rewards": [
+          0.02,
+          0.08,
+          0.1,
+          0.12000000000000001
+        ],
+        "lengths": [
+          31,
+          59,
+          65,
+          75
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          5,
+          6,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03741657386773942,
+        "version": 0,
+        "time": 1795672462.4578657
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000003",
+        "rewards": [
+          0.02,
+          0.02,
+          0.04,
+          0.04
+        ],
+        "lengths": [
+          28,
+          27,
+          47,
+          47
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          2,
+          3,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.01,
+        "version": 0,
+        "time": 1795672462.4582114
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000004",
+        "rewards": [
+          0.04,
+          0.1,
+          0.1,
+          0.12000000000000001
+        ],
+        "lengths": [
+          36,
+          58,
+          66,
+          71
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          6,
+          6,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.030000000000000002,
+        "version": 1,
+        "time": 1795672467.364391
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000005",
+        "rewards": [
+          0.1,
+          0.1,
+          0.06,
+          0.02
+        ],
+        "lengths": [
+          52,
+          38,
+          44,
+          18
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          6,
+          4,
+          2
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.033166247903554005,
+        "version": 1,
+        "time": 1795672467.3648095
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000006",
+        "rewards": [
+          0.02,
+          0.06,
+          0.14,
+          0.1
+        ],
+        "lengths": [
+          24,
+          51,
+          69,
+          53
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          4,
+          8,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0447213595499958,
+        "version": 1,
+        "time": 1795672470.445237
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000007",
+        "rewards": [
+          0.08,
+          0.08,
+          0.12000000000000001,
+          0.12000000000000001
+        ],
+        "lengths": [
+          87,
+          48,
+          67,
+          76
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          5,
+          7,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.020000000000000004,
+        "version": 1,
+        "time": 1795672470.4455793
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000008",
+        "rewards": [
+          0.02,
+          0.1,
+          0.1,
+          0.08
+        ],
+        "lengths": [
+          25,
+          79,
+          66,
+          66
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          6,
+          6,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03278719262151,
+        "version": 2,
+        "time": 1795672475.3645499
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000009",
+        "rewards": [
+          0.04,
+          0.06,
+          0.06,
+          0.06
+        ],
+        "lengths": [
+          37,
+          34,
+          47,
+          32
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          4,
+          4,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.008660254037844385,
+        "version": 2,
+        "time": 1795672475.36503
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000010",
+        "rewards": [
+          0.06,
+          0.06,
+          0.06,
+          0.04
+        ],
+        "lengths": [
+          54,
+          45,
+          41,
+          25
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          4,
+          4,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.008660254037844385,
+        "version": 2,
+        "time": 1795672477.0536292
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000011",
+        "rewards": [
+          0.06,
+          0.04,
+          0.02,
+          0.04
+        ],
+        "lengths": [
+          54,
+          34,
+          20,
+          44
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          3,
+          2,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.01414213562373095,
+        "version": 2,
+        "time": 1795672477.0539799
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000012",
+        "rewards": [
+          0.02,
+          0.02,
+          0.12000000000000001,
+          0.02
+        ],
+        "lengths": [
+          26,
+          28,
+          52,
+          24
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          2,
+          7,
+          2
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.04330127018922193,
+        "version": 3,
+        "time": 1795672480.710836
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000013",
+        "rewards": [
+          0.08,
+          0.08,
+          0.04,
+          0.16
+        ],
+        "lengths": [
+          52,
+          41,
+          35,
+          63
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          5,
+          3,
+          9
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.04358898943540673,
+        "version": 3,
+        "time": 1795672480.711328
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000014",
+        "rewards": [
+          0.06,
+          0.02,
+          0.06,
+          0.04
+        ],
+        "lengths": [
+          64,
+          23,
+          62,
+          47
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          2,
+          4,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.016583123951777,
+        "version": 3,
+        "time": 1795672482.6195416
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000015",
+        "rewards": [
+          0.08,
+          0.06,
+          0.02,
+          0.06
+        ],
+        "lengths": [
+          64,
+          38,
+          21,
+          68
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          4,
+          2,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.02179449471770337,
+        "version": 3,
+        "time": 1795672482.6198845
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000016",
+        "rewards": [
+          0.1,
+          0.02,
+          0.14,
+          0.02
+        ],
+        "lengths": [
+          89,
+          27,
+          71,
+          31
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          2,
+          8,
+          2
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.051961524227066326,
+        "version": 4,
+        "time": 1795672487.8038743
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000017",
+        "rewards": [
+          0.16,
+          0.02,
+          0.02,
+          0.02
+        ],
+        "lengths": [
+          112,
+          27,
+          31,
+          24
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          2,
+          2,
+          2
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0606217782649107,
+        "version": 4,
+        "time": 1795672487.8044121
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000018",
+        "rewards": [
+          0.04,
+          0.04,
+          0.08,
+          0.04
+        ],
+        "lengths": [
+          50,
+          42,
+          55,
+          45
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          3,
+          5,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.017320508075688773,
+        "version": 4,
+        "time": 1795672489.8630173
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000019",
+        "rewards": [
+          0.06,
+          0.04,
+          0.1,
+          0.08
+        ],
+        "lengths": [
+          61,
+          30,
+          71,
+          67
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          3,
+          6,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0223606797749979,
+        "version": 4,
+        "time": 1795672489.8633475
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000020",
+        "rewards": [
+          0.21999999999999997,
+          0.08,
+          0.04,
+          0.1
+        ],
+        "lengths": [
+          100,
+          58,
+          43,
+          61
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          12,
+          5,
+          3,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.06708203932499368,
+        "version": 5,
+        "time": 1795672494.5352046
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000021",
+        "rewards": [
+          0.04,
+          0.02,
+          0.04,
+          0.06
+        ],
+        "lengths": [
+          45,
+          34,
+          54,
+          49
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          2,
+          3,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.01414213562373095,
+        "version": 5,
+        "time": 1795672494.5357254
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000022",
+        "rewards": [
+          0.08,
+          0.02,
+          0.12000000000000001,
+          0.02
+        ],
+        "lengths": [
+          71,
+          20,
+          92,
+          25
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          2,
+          7,
+          2
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.042426406871192854,
+        "version": 5,
+        "time": 1795672497.3288176
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000023",
+        "rewards": [
+          0.08,
+          0.16,
+          0.04,
+          0.08
+        ],
+        "lengths": [
+          59,
+          50,
+          33,
+          49
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          9,
+          3,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.04358898943540674,
+        "version": 5,
+        "time": 1795672497.329162
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000024",
+        "rewards": [
+          0.08,
+          0.08,
+          0.04,
+          0.08
+        ],
+        "lengths": [
+          62,
+          62,
+          46,
+          76
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          5,
+          3,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.017320508075688773,
+        "version": 6,
+        "time": 1795672501.5980234
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000025",
+        "rewards": [
+          0.04,
+          0.02,
+          0.06,
+          0.06
+        ],
+        "lengths": [
+          37,
+          34,
+          43,
+          38
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          2,
+          4,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.016583123951777,
+        "version": 6,
+        "time": 1795672501.598628
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000026",
+        "rewards": [
+          0.1,
+          0.04,
+          0.12000000000000001,
+          0.06
+        ],
+        "lengths": [
+          74,
+          41,
+          90,
+          42
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          3,
+          7,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0316227766016838,
+        "version": 6,
+        "time": 1795672504.0745447
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000027",
+        "rewards": [
+          0.12000000000000001,
+          0.04,
+          0.04,
+          0.08
+        ],
+        "lengths": [
+          78,
+          34,
+          37,
+          50
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          3,
+          3,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.033166247903554005,
+        "version": 6,
+        "time": 1795672504.07489
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000028",
+        "rewards": [
+          0.08,
+          0.23999999999999996,
+          0.08,
+          0.06
+        ],
+        "lengths": [
+          53,
+          98,
+          51,
+          50
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          13,
+          5,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.07262919523166975,
+        "version": 7,
+        "time": 1795672509.1066296
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000029",
+        "rewards": [
+          0.06,
+          0.04,
+          0.04,
+          0.12000000000000001
+        ],
+        "lengths": [
+          37,
+          37,
+          39,
+          78
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          3,
+          3,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03278719262151001,
+        "version": 7,
+        "time": 1795672509.1072686
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000030",
+        "rewards": [
+          0.1,
+          0.08,
+          0.12000000000000001,
+          0.08
+        ],
+        "lengths": [
+          83,
+          51,
+          74,
+          59
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          5,
+          7,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.016583123951777003,
+        "version": 7,
+        "time": 1795672511.731018
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000031",
+        "rewards": [
+          0.02,
+          0.14,
+          0.14,
+          0.02
+        ],
+        "lengths": [
+          23,
+          66,
+          67,
+          21
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          8,
+          8,
+          2
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.060000000000000005,
+        "version": 7,
+        "time": 1795672511.731378
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000032",
+        "rewards": [
+          0.12000000000000001,
+          0.12000000000000001,
+          0.02,
+          0.08
+        ],
+        "lengths": [
+          68,
+          58,
+          24,
+          31
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          7,
+          2,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.04092676385936225,
+        "version": 8,
+        "time": 1795672515.8447907
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000033",
+        "rewards": [
+          0.1,
+          0.04,
+          0.06,
+          0.06
+        ],
+        "lengths": [
+          55,
+          35,
+          59,
+          50
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          3,
+          4,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.02179449471770337,
+        "version": 8,
+        "time": 1795672515.8453932
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000034",
+        "rewards": [
+          0.04,
+          0.06,
+          0.08,
+          0.12000000000000001
+        ],
+        "lengths": [
+          43,
+          53,
+          38,
+          66
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          4,
+          5,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.029580398915498084,
+        "version": 8,
+        "time": 1795672517.885952
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000035",
+        "rewards": [
+          0.06,
+          0.14,
+          0.02,
+          0.19999999999999998
+        ],
+        "lengths": [
+          43,
+          73,
+          22,
+          66
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          8,
+          2,
+          11
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0698212002188447,
+        "version": 8,
+        "time": 1795672517.886309
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000036",
+        "rewards": [
+          0.12000000000000001,
+          0.02,
+          0.1,
+          0.12000000000000001
+        ],
+        "lengths": [
+          69,
+          17,
+          74,
+          75
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          2,
+          6,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.04123105625617661,
+        "version": 9,
+        "time": 1795672522.3635674
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000037",
+        "rewards": [
+          0.16,
+          0.06,
+          0.04,
+          0.08
+        ],
+        "lengths": [
+          85,
+          44,
+          39,
+          56
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          4,
+          3,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0455521678957215,
+        "version": 9,
+        "time": 1795672522.364113
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000038",
+        "rewards": [
+          0.06,
+          0.08,
+          0.12000000000000001,
+          0.08
+        ],
+        "lengths": [
+          57,
+          77,
+          82,
+          73
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          5,
+          7,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.021794494717703373,
+        "version": 9,
+        "time": 1795672524.6647563
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000039",
+        "rewards": [
+          0.1,
+          0.12000000000000001,
+          0.04,
+          0.12000000000000001
+        ],
+        "lengths": [
+          64,
+          81,
+          35,
+          57
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          7,
+          3,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03278719262151001,
+        "version": 9,
+        "time": 1795672524.6650934
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000040",
+        "rewards": [
+          0.08,
+          0.06,
+          0.06,
+          0.08
+        ],
+        "lengths": [
+          50,
+          43,
+          40,
+          64
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          4,
+          4,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.010000000000000002,
+        "version": 10,
+        "time": 1795672528.751438
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000041",
+        "rewards": [
+          0.04,
+          0.12000000000000001,
+          0.06,
+          0.06
+        ],
+        "lengths": [
+          44,
+          52,
+          52,
+          50
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          7,
+          4,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.030000000000000006,
+        "version": 10,
+        "time": 1795672528.7519767
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000042",
+        "rewards": [
+          0.1,
+          0.12000000000000001,
+          0.02,
+          0.06
+        ],
+        "lengths": [
+          52,
+          63,
+          30,
+          47
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          7,
+          2,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.038405728739343045,
+        "version": 10,
+        "time": 1795672530.781291
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000043",
+        "rewards": [
+          0.14,
+          0.06,
+          0.14,
+          0.1
+        ],
+        "lengths": [
+          73,
+          35,
+          65,
+          76
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          4,
+          8,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.033166247903554005,
+        "version": 10,
+        "time": 1795672530.781576
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000044",
+        "rewards": [
+          0.06,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.06
+        ],
+        "lengths": [
+          42,
+          63,
+          56,
+          45
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          7,
+          7,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.030000000000000006,
+        "version": 11,
+        "time": 1795672534.4249144
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000045",
+        "rewards": [
+          0.04,
+          0.04,
+          0.08,
+          0.12000000000000001
+        ],
+        "lengths": [
+          43,
+          38,
+          61,
+          66
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          3,
+          5,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.033166247903554005,
+        "version": 11,
+        "time": 1795672534.4254107
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000046",
+        "rewards": [
+          0.06,
+          0.08,
+          0.16,
+          0.1
+        ],
+        "lengths": [
+          52,
+          38,
+          84,
+          58
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          5,
+          9,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03741657386773942,
+        "version": 11,
+        "time": 1795672536.5300996
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000047",
+        "rewards": [
+          0.06,
+          0.04,
+          0.12000000000000001,
+          0.02
+        ],
+        "lengths": [
+          57,
+          41,
+          85,
+          24
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          3,
+          7,
+          2
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03741657386773942,
+        "version": 11,
+        "time": 1795672536.5304098
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000048",
+        "rewards": [
+          0.02,
+          0.14,
+          0.1,
+          0.08
+        ],
+        "lengths": [
+          20,
+          60,
+          54,
+          35
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          8,
+          6,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.04330127018922194,
+        "version": 12,
+        "time": 1795672541.5785835
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000049",
+        "rewards": [
+          0.14,
+          0.08,
+          0.06,
+          0.19999999999999998
+        ],
+        "lengths": [
+          87,
+          69,
+          55,
+          117
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          5,
+          4,
+          11
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.054772255750516606,
+        "version": 12,
+        "time": 1795672541.5790718
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000050",
+        "rewards": [
+          0.06,
+          0.06,
+          0.06,
+          0.1
+        ],
+        "lengths": [
+          54,
+          54,
+          59,
+          70
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          4,
+          4,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.017320508075688777,
+        "version": 12,
+        "time": 1795672544.004335
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000051",
+        "rewards": [
+          0.14,
+          0.06,
+          0.14,
+          0.04
+        ],
+        "lengths": [
+          88,
+          47,
+          95,
+          36
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          4,
+          8,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0455521678957215,
+        "version": 12,
+        "time": 1795672544.0046527
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000052",
+        "rewards": [
+          0.04,
+          0.16,
+          0.16,
+          0.06
+        ],
+        "lengths": [
+          44,
+          97,
+          76,
+          42
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          9,
+          9,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.05545268253204709,
+        "version": 13,
+        "time": 1795672548.9522984
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000053",
+        "rewards": [
+          0.04,
+          0.04,
+          0.08,
+          0.04
+        ],
+        "lengths": [
+          32,
+          23,
+          63,
+          33
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          3,
+          5,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.017320508075688773,
+        "version": 13,
+        "time": 1795672548.9528704
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000054",
+        "rewards": [
+          0.16,
+          0.16,
+          0.12000000000000001,
+          0.02
+        ],
+        "lengths": [
+          75,
+          66,
+          83,
+          25
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          9,
+          7,
+          2
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.05722761571129799,
+        "version": 13,
+        "time": 1795672551.213667
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000055",
+        "rewards": [
+          0.06,
+          0.06,
+          0.1,
+          0.06
+        ],
+        "lengths": [
+          43,
+          42,
+          70,
+          38
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          4,
+          6,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.017320508075688777,
+        "version": 13,
+        "time": 1795672551.2140248
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000056",
+        "rewards": [
+          0.04,
+          0.06,
+          0.04,
+          0.14
+        ],
+        "lengths": [
+          40,
+          55,
+          41,
+          65
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          4,
+          3,
+          8
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.04123105625617661,
+        "version": 14,
+        "time": 1795672556.409284
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000057",
+        "rewards": [
+          0.04,
+          0.14,
+          0.12000000000000001,
+          0.1
+        ],
+        "lengths": [
+          41,
+          117,
+          73,
+          37
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          8,
+          7,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03741657386773942,
+        "version": 14,
+        "time": 1795672556.4098916
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000058",
+        "rewards": [
+          0.06,
+          0.04,
+          0.1,
+          0.1
+        ],
+        "lengths": [
+          52,
+          52,
+          68,
+          74
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          3,
+          6,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.02598076211353316,
+        "version": 14,
+        "time": 1795672558.9483473
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000059",
+        "rewards": [
+          0.12000000000000001,
+          0.12000000000000001,
+          0.06,
+          0.12000000000000001
+        ],
+        "lengths": [
+          70,
+          80,
+          45,
+          87
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          7,
+          4,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.025980762113533163,
+        "version": 14,
+        "time": 1795672558.948715
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000060",
+        "rewards": [
+          0.1,
+          0.04,
+          0.1,
+          0.06
+        ],
+        "lengths": [
+          72,
+          45,
+          80,
+          61
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          3,
+          6,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.02598076211353316,
+        "version": 15,
+        "time": 1795672564.2658763
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000061",
+        "rewards": [
+          0.1,
+          0.14,
+          0.1,
+          0.04
+        ],
+        "lengths": [
+          80,
+          106,
+          76,
+          40
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          8,
+          6,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.035707142142714254,
+        "version": 15,
+        "time": 1795672564.2664998
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000062",
+        "rewards": [
+          0.16,
+          0.1,
+          0.04,
+          0.1
+        ],
+        "lengths": [
+          82,
+          77,
+          32,
+          60
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          6,
+          3,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.042426406871192854,
+        "version": 15,
+        "time": 1795672566.6769133
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000063",
+        "rewards": [
+          0.1,
+          0.06,
+          0.1,
+          0.1
+        ],
+        "lengths": [
+          68,
+          45,
+          45,
+          77
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          4,
+          6,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.01732050807568878,
+        "version": 15,
+        "time": 1795672566.6772292
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000064",
+        "rewards": [
+          0.06,
+          0.04,
+          0.12000000000000001,
+          0.06
+        ],
+        "lengths": [
+          33,
+          34,
+          57,
+          49
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          3,
+          7,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.030000000000000006,
+        "version": 16,
+        "time": 1795672572.130193
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000065",
+        "rewards": [
+          0.14,
+          0.16,
+          0.04,
+          0.08
+        ],
+        "lengths": [
+          97,
+          90,
+          33,
+          78
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          9,
+          3,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.04769696007084728,
+        "version": 16,
+        "time": 1795672572.1308045
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000066",
+        "rewards": [
+          0.12000000000000001,
+          0.16,
+          0.14,
+          0.08
+        ],
+        "lengths": [
+          69,
+          90,
+          69,
+          64
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          9,
+          8,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.02958039891549808,
+        "version": 16,
+        "time": 1795672574.3896482
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000067",
+        "rewards": [
+          0.04,
+          0.08,
+          0.04,
+          0.16
+        ],
+        "lengths": [
+          44,
+          48,
+          55,
+          64
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          5,
+          3,
+          9
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.048989794855663564,
+        "version": 16,
+        "time": 1795672574.3900013
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000068",
+        "rewards": [
+          0.16,
+          0.12000000000000001,
+          0.06,
+          0.06
+        ],
+        "lengths": [
+          80,
+          55,
+          39,
+          40
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          7,
+          4,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.042426406871192854,
+        "version": 17,
+        "time": 1795672579.441442
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000069",
+        "rewards": [
+          0.04,
+          0.08,
+          0.04,
+          0.12000000000000001
+        ],
+        "lengths": [
+          39,
+          58,
+          42,
+          100
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          5,
+          3,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.033166247903554005,
+        "version": 17,
+        "time": 1795672579.4420822
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000070",
+        "rewards": [
+          0.04,
+          0.04,
+          0.04,
+          0.1
+        ],
+        "lengths": [
+          47,
+          45,
+          36,
+          74
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          3,
+          3,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.02598076211353316,
+        "version": 17,
+        "time": 1795672581.4571097
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000071",
+        "rewards": [
+          0.06,
+          0.02,
+          0.14,
+          0.04
+        ],
+        "lengths": [
+          52,
+          29,
+          80,
+          51
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          2,
+          8,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0455521678957215,
+        "version": 17,
+        "time": 1795672581.4574523
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000072",
+        "rewards": [
+          0.04,
+          0.14,
+          0.14,
+          0.12000000000000001
+        ],
+        "lengths": [
+          38,
+          101,
+          63,
+          57
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          8,
+          8,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.04123105625617661,
+        "version": 18,
+        "time": 1795672586.151297
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000073",
+        "rewards": [
+          0.08,
+          0.08,
+          0.08,
+          0.1
+        ],
+        "lengths": [
+          51,
+          47,
+          60,
+          55
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          5,
+          5,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.008660254037844388,
+        "version": 18,
+        "time": 1795672586.151854
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000074",
+        "rewards": [
+          0.08,
+          0.19999999999999998,
+          0.14,
+          0.16
+        ],
+        "lengths": [
+          55,
+          91,
+          82,
+          82
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          11,
+          8,
+          9
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.043301270189221926,
+        "version": 18,
+        "time": 1795672589.016948
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000075",
+        "rewards": [
+          0.25999999999999995,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.08
+        ],
+        "lengths": [
+          109,
+          66,
+          56,
+          50
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          14,
+          7,
+          7,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0683739716558867,
+        "version": 18,
+        "time": 1795672589.0172422
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000076",
+        "rewards": [
+          0.16,
+          0.12000000000000001,
+          0.1,
+          0.16
+        ],
+        "lengths": [
+          69,
+          110,
+          63,
+          89
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          7,
+          6,
+          9
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.025980762113533156,
+        "version": 19,
+        "time": 1795672594.1758895
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000077",
+        "rewards": [
+          0.04,
+          0.06,
+          0.06,
+          0.08
+        ],
+        "lengths": [
+          43,
+          66,
+          53,
+          73
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          4,
+          4,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.01414213562373095,
+        "version": 19,
+        "time": 1795672594.1763747
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000078",
+        "rewards": [
+          0.16,
+          0.06,
+          0.1,
+          0.12000000000000001
+        ],
+        "lengths": [
+          76,
+          52,
+          63,
+          53
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          4,
+          6,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0360555127546399,
+        "version": 19,
+        "time": 1795672596.1382957
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000079",
+        "rewards": [
+          0.12000000000000001,
+          0.08,
+          0.06,
+          0.14
+        ],
+        "lengths": [
+          64,
+          56,
+          59,
+          78
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          5,
+          4,
+          8
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0316227766016838,
+        "version": 19,
+        "time": 1795672596.138724
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000080",
+        "rewards": [
+          0.12000000000000001,
+          0.08,
+          0.12000000000000001,
+          0.1
+        ],
+        "lengths": [
+          87,
+          64,
+          76,
+          69
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          5,
+          7,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.016583123951777003,
+        "version": 20,
+        "time": 1795672600.7696254
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000081",
+        "rewards": [
+          0.06,
+          0.06,
+          0.04,
+          0.04
+        ],
+        "lengths": [
+          41,
+          49,
+          30,
+          37
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          4,
+          3,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.009999999999999998,
+        "version": 20,
+        "time": 1795672600.7701952
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000082",
+        "rewards": [
+          0.1,
+          0.08,
+          0.1,
+          0.08
+        ],
+        "lengths": [
+          98,
+          39,
+          50,
+          48
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          5,
+          6,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.010000000000000002,
+        "version": 20,
+        "time": 1795672603.578849
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000083",
+        "rewards": [
+          0.04,
+          0.04,
+          0.16,
+          0.16
+        ],
+        "lengths": [
+          23,
+          39,
+          80,
+          57
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          3,
+          9,
+          9
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.06,
+        "version": 20,
+        "time": 1795672603.5792103
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000084",
+        "rewards": [
+          0.06,
+          0.1,
+          0.1,
+          0.06
+        ],
+        "lengths": [
+          39,
+          62,
+          75,
+          53
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          6,
+          6,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.020000000000000004,
+        "version": 21,
+        "time": 1795672608.0503132
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000085",
+        "rewards": [
+          0.14,
+          0.04,
+          0.12000000000000001,
+          0.08
+        ],
+        "lengths": [
+          91,
+          50,
+          83,
+          57
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          3,
+          7,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.038405728739343045,
+        "version": 21,
+        "time": 1795672608.050933
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000086",
+        "rewards": [
+          0.06,
+          0.1,
+          0.16,
+          0.02
+        ],
+        "lengths": [
+          47,
+          50,
+          94,
+          28
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          6,
+          9,
+          2
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.051720402163943004,
+        "version": 21,
+        "time": 1795672610.4585462
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000087",
+        "rewards": [
+          0.06,
+          0.08,
+          0.16,
+          0.08
+        ],
+        "lengths": [
+          44,
+          52,
+          64,
+          73
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          5,
+          9,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.038405728739343045,
+        "version": 21,
+        "time": 1795672610.4589016
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000088",
+        "rewards": [
+          0.12000000000000001,
+          0.06,
+          0.1,
+          0.12000000000000001
+        ],
+        "lengths": [
+          92,
+          53,
+          86,
+          84
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          4,
+          6,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.024494897427831785,
+        "version": 22,
+        "time": 1795672615.1129599
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000089",
+        "rewards": [
+          0.06,
+          0.12000000000000001,
+          0.08,
+          0.12000000000000001
+        ],
+        "lengths": [
+          40,
+          55,
+          83,
+          59
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          7,
+          5,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.025980762113533163,
+        "version": 22,
+        "time": 1795672615.1135583
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000090",
+        "rewards": [
+          0.14,
+          0.16,
+          0.1,
+          0.16
+        ],
+        "lengths": [
+          96,
+          83,
+          63,
+          88
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          9,
+          6,
+          9
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.024494897427831782,
+        "version": 22,
+        "time": 1795672617.7949467
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000091",
+        "rewards": [
+          0.12000000000000001,
+          0.1,
+          0.16,
+          0.08
+        ],
+        "lengths": [
+          77,
+          70,
+          76,
+          54
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          6,
+          9,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.02958039891549808,
+        "version": 22,
+        "time": 1795672617.7952545
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000092",
+        "rewards": [
+          0.14,
+          0.1,
+          0.14,
+          0.12000000000000001
+        ],
+        "lengths": [
+          81,
+          45,
+          78,
+          69
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          6,
+          8,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.016583123951777003,
+        "version": 23,
+        "time": 1795672623.6464763
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000093",
+        "rewards": [
+          0.12000000000000001,
+          0.19999999999999998,
+          0.14,
+          0.16
+        ],
+        "lengths": [
+          65,
+          93,
+          73,
+          122
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          11,
+          8,
+          9
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.029580398915498067,
+        "version": 23,
+        "time": 1795672623.647076
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000094",
+        "rewards": [
+          0.04,
+          0.12000000000000001,
+          0.04,
+          0.04
+        ],
+        "lengths": [
+          32,
+          74,
+          44,
+          47
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          7,
+          3,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03464101615137755,
+        "version": 23,
+        "time": 1795672625.5389922
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000095",
+        "rewards": [
+          0.12000000000000001,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.12000000000000001
+        ],
+        "lengths": [
+          66,
+          59,
+          72,
+          58
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": false,
+        "retained": true,
+        "reward_std": 0.0,
+        "version": 23,
+        "time": 1795672625.5392714
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000096",
+        "rewards": [
+          0.1,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.14
+        ],
+        "lengths": [
+          80,
+          78,
+          70,
+          95
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          7,
+          7,
+          8
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.014142135623730954,
+        "version": 24,
+        "time": 1795672630.414382
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000097",
+        "rewards": [
+          0.16,
+          0.1,
+          0.06,
+          0.06
+        ],
+        "lengths": [
+          89,
+          74,
+          57,
+          68
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          6,
+          4,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.04092676385936225,
+        "version": 24,
+        "time": 1795672630.4149947
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000098",
+        "rewards": [
+          0.1,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.12000000000000001
+        ],
+        "lengths": [
+          64,
+          78,
+          81,
+          89
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          7,
+          7,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.00866025403784439,
+        "version": 24,
+        "time": 1795672632.9981809
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000099",
+        "rewards": [
+          0.02,
+          0.1,
+          0.19999999999999998,
+          0.16
+        ],
+        "lengths": [
+          21,
+          45,
+          99,
+          59
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          6,
+          11,
+          9
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.06782329983125268,
+        "version": 24,
+        "time": 1795672632.998434
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000100",
+        "rewards": [
+          0.12000000000000001,
+          0.08,
+          0.06,
+          0.08
+        ],
+        "lengths": [
+          70,
+          44,
+          45,
+          44
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          5,
+          4,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.021794494717703373,
+        "version": 25,
+        "time": 1795672637.8867016
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000101",
+        "rewards": [
+          0.08,
+          0.12000000000000001,
+          0.1,
+          0.08
+        ],
+        "lengths": [
+          69,
+          71,
+          73,
+          66
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          7,
+          6,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.016583123951777003,
+        "version": 25,
+        "time": 1795672637.887348
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000102",
+        "rewards": [
+          0.14,
+          0.08,
+          0.06,
+          0.08
+        ],
+        "lengths": [
+          93,
+          44,
+          56,
+          48
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          5,
+          4,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.030000000000000006,
+        "version": 25,
+        "time": 1795672640.1950464
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000103",
+        "rewards": [
+          0.02,
+          0.02,
+          0.12000000000000001,
+          0.08
+        ],
+        "lengths": [
+          21,
+          24,
+          69,
+          46
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          2,
+          7,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.042426406871192854,
+        "version": 25,
+        "time": 1795672640.1953082
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000104",
+        "rewards": [
+          0.12000000000000001,
+          0.12000000000000001,
+          0.04,
+          0.12000000000000001
+        ],
+        "lengths": [
+          78,
+          70,
+          38,
+          59
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          7,
+          3,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03464101615137755,
+        "version": 26,
+        "time": 1795672645.2263603
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000105",
+        "rewards": [
+          0.21999999999999997,
+          0.12000000000000001,
+          0.08,
+          0.12000000000000001
+        ],
+        "lengths": [
+          113,
+          89,
+          59,
+          84
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          12,
+          7,
+          5,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.05172040216394299,
+        "version": 26,
+        "time": 1795672645.2269292
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000106",
+        "rewards": [
+          0.14,
+          0.12000000000000001,
+          0.06,
+          0.08
+        ],
+        "lengths": [
+          75,
+          76,
+          36,
+          53
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          7,
+          4,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0316227766016838,
+        "version": 26,
+        "time": 1795672647.4869025
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000107",
+        "rewards": [
+          0.16,
+          0.14,
+          0.12000000000000001,
+          0.08
+        ],
+        "lengths": [
+          70,
+          63,
+          78,
+          63
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          8,
+          7,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.02958039891549808,
+        "version": 26,
+        "time": 1795672647.487219
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000108",
+        "rewards": [
+          0.12000000000000001,
+          0.16,
+          0.16,
+          0.14
+        ],
+        "lengths": [
+          72,
+          79,
+          81,
+          91
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          9,
+          9,
+          8
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.016583123951776996,
+        "version": 27,
+        "time": 1795672652.9066727
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000109",
+        "rewards": [
+          0.12000000000000001,
+          0.1,
+          0.08,
+          0.1
+        ],
+        "lengths": [
+          104,
+          84,
+          81,
+          73
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          6,
+          5,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.014142135623730954,
+        "version": 27,
+        "time": 1795672652.9072568
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000110",
+        "rewards": [
+          0.04,
+          0.16,
+          0.16,
+          0.16
+        ],
+        "lengths": [
+          38,
+          80,
+          83,
+          71
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          9,
+          9,
+          9
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.05196152422706632,
+        "version": 27,
+        "time": 1795672655.7224276
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000111",
+        "rewards": [
+          0.1,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.04
+        ],
+        "lengths": [
+          81,
+          93,
+          67,
+          29
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          7,
+          7,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03278719262151001,
+        "version": 27,
+        "time": 1795672655.7226908
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000112",
+        "rewards": [
+          0.12000000000000001,
+          0.06,
+          0.12000000000000001,
+          0.08
+        ],
+        "lengths": [
+          64,
+          47,
+          75,
+          51
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          4,
+          7,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.025980762113533163,
+        "version": 28,
+        "time": 1795672660.7894132
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000113",
+        "rewards": [
+          0.06,
+          0.1,
+          0.1,
+          0.08
+        ],
+        "lengths": [
+          64,
+          66,
+          67,
+          79
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          6,
+          6,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.016583123951777003,
+        "version": 28,
+        "time": 1795672660.789949
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000114",
+        "rewards": [
+          0.12000000000000001,
+          0.1,
+          0.08,
+          0.14
+        ],
+        "lengths": [
+          62,
+          51,
+          57,
+          59
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          6,
+          5,
+          8
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0223606797749979,
+        "version": 28,
+        "time": 1795672663.0282238
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000115",
+        "rewards": [
+          0.12000000000000001,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.16
+        ],
+        "lengths": [
+          57,
+          75,
+          77,
+          60
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          7,
+          7,
+          9
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.01732050807568877,
+        "version": 28,
+        "time": 1795672663.028473
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000116",
+        "rewards": [
+          0.12000000000000001,
+          0.12000000000000001,
+          0.08,
+          0.14
+        ],
+        "lengths": [
+          79,
+          71,
+          60,
+          79
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          7,
+          5,
+          8
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.02179449471770337,
+        "version": 29,
+        "time": 1795672667.8012571
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000117",
+        "rewards": [
+          0.14,
+          0.14,
+          0.14,
+          0.06
+        ],
+        "lengths": [
+          51,
+          86,
+          76,
+          58
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          8,
+          8,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03464101615137755,
+        "version": 29,
+        "time": 1795672667.8017707
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000118",
+        "rewards": [
+          0.1,
+          0.1,
+          0.06,
+          0.1
+        ],
+        "lengths": [
+          51,
+          67,
+          73,
+          58
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          6,
+          4,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.017320508075688777,
+        "version": 29,
+        "time": 1795672670.6060572
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000119",
+        "rewards": [
+          0.06,
+          0.04,
+          0.19999999999999998,
+          0.14
+        ],
+        "lengths": [
+          45,
+          45,
+          110,
+          89
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          3,
+          11,
+          8
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.06403124237432849,
+        "version": 29,
+        "time": 1795672670.606324
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000120",
+        "rewards": [
+          0.14,
+          0.14,
+          0.14,
+          0.14
+        ],
+        "lengths": [
+          69,
+          96,
+          64,
+          77
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": false,
+        "retained": true,
+        "reward_std": 0.0,
+        "version": 30,
+        "time": 1795672676.2604513
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000121",
+        "rewards": [
+          0.02,
+          0.14,
+          0.12000000000000001,
+          0.16
+        ],
+        "lengths": [
+          19,
+          73,
+          57,
+          84
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          8,
+          7,
+          9
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.053851648071345036,
+        "version": 30,
+        "time": 1795672676.2610006
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000122",
+        "rewards": [
+          0.14,
+          0.1,
+          0.12000000000000001,
+          0.14
+        ],
+        "lengths": [
+          86,
+          74,
+          80,
+          103
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          6,
+          7,
+          8
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.016583123951777003,
+        "version": 30,
+        "time": 1795672678.713096
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000123",
+        "rewards": [
+          0.08,
+          0.16,
+          0.06,
+          0.08
+        ],
+        "lengths": [
+          61,
+          92,
+          71,
+          41
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          9,
+          4,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.038405728739343045,
+        "version": 30,
+        "time": 1795672678.7133448
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000124",
+        "rewards": [
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ],
+        "lengths": [
+          54,
+          61,
+          71,
+          64
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": false,
+        "retained": true,
+        "reward_std": 0.0,
+        "version": 31,
+        "time": 1795672683.9471242
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000125",
+        "rewards": [
+          0.02,
+          0.06,
+          0.08,
+          0.19999999999999998
+        ],
+        "lengths": [
+          18,
+          55,
+          61,
+          98
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          2,
+          4,
+          5,
+          11
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.06708203932499368,
+        "version": 31,
+        "time": 1795672683.9476895
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000126",
+        "rewards": [
+          0.04,
+          0.16,
+          0.14,
+          0.12000000000000001
+        ],
+        "lengths": [
+          48,
+          110,
+          76,
+          92
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          9,
+          8,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0455521678957215,
+        "version": 31,
+        "time": 1795672686.8963747
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000127",
+        "rewards": [
+          0.16,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.19999999999999998
+        ],
+        "lengths": [
+          101,
+          75,
+          88,
+          120
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          7,
+          7,
+          11
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03316624790355399,
+        "version": 31,
+        "time": 1795672686.896859
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000128",
+        "rewards": [
+          0.16,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.12000000000000001
+        ],
+        "lengths": [
+          102,
+          62,
+          98,
+          68
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          7,
+          7,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.01732050807568877,
+        "version": 32,
+        "time": 1795672692.4015694
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000129",
+        "rewards": [
+          0.12000000000000001,
+          0.1,
+          0.1,
+          0.14
+        ],
+        "lengths": [
+          63,
+          75,
+          98,
+          77
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          6,
+          6,
+          8
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.016583123951777003,
+        "version": 32,
+        "time": 1795672692.4021325
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000130",
+        "rewards": [
+          0.1,
+          0.12000000000000001,
+          0.08,
+          0.08
+        ],
+        "lengths": [
+          69,
+          73,
+          67,
+          67
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          7,
+          5,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.016583123951777003,
+        "version": 32,
+        "time": 1795672694.5686402
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000131",
+        "rewards": [
+          0.1,
+          0.06,
+          0.14,
+          0.04
+        ],
+        "lengths": [
+          88,
+          47,
+          78,
+          34
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          4,
+          8,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.038405728739343045,
+        "version": 32,
+        "time": 1795672694.5688848
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000132",
+        "rewards": [
+          0.1,
+          0.14,
+          0.06,
+          0.06
+        ],
+        "lengths": [
+          63,
+          76,
+          60,
+          45
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          6,
+          8,
+          4,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.033166247903554005,
+        "version": 33,
+        "time": 1795672699.9847057
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000133",
+        "rewards": [
+          0.16,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.1
+        ],
+        "lengths": [
+          109,
+          47,
+          57,
+          100
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          7,
+          7,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.021794494717703367,
+        "version": 33,
+        "time": 1795672699.9852355
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000134",
+        "rewards": [
+          0.12000000000000001,
+          0.04,
+          0.12000000000000001,
+          0.1
+        ],
+        "lengths": [
+          80,
+          42,
+          77,
+          60
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          3,
+          7,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03278719262151001,
+        "version": 33,
+        "time": 1795672701.9890206
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000135",
+        "rewards": [
+          0.14,
+          0.16,
+          0.16,
+          0.12000000000000001
+        ],
+        "lengths": [
+          75,
+          60,
+          67,
+          80
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          9,
+          9,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.016583123951776996,
+        "version": 33,
+        "time": 1795672701.9892807
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000136",
+        "rewards": [
+          0.08,
+          0.06,
+          0.32,
+          0.12000000000000001
+        ],
+        "lengths": [
+          58,
+          45,
+          163,
+          73
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          4,
+          17,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.10331989159885913,
+        "version": 34,
+        "time": 1795672708.6368797
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000137",
+        "rewards": [
+          0.08,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.06
+        ],
+        "lengths": [
+          65,
+          64,
+          84,
+          52
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          7,
+          7,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.025980762113533163,
+        "version": 34,
+        "time": 1795672708.6374648
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000138",
+        "rewards": [
+          0.12000000000000001,
+          0.12000000000000001,
+          0.04,
+          0.1
+        ],
+        "lengths": [
+          74,
+          69,
+          42,
+          65
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          7,
+          3,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03278719262151001,
+        "version": 34,
+        "time": 1795672710.8696933
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000139",
+        "rewards": [
+          0.12000000000000001,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.12000000000000001
+        ],
+        "lengths": [
+          89,
+          88,
+          76,
+          85
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          7,
+          7,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": false,
+        "retained": true,
+        "reward_std": 0.0,
+        "version": 34,
+        "time": 1795672710.869959
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000140",
+        "rewards": [
+          0.12000000000000001,
+          0.25999999999999995,
+          0.08,
+          0.08
+        ],
+        "lengths": [
+          74,
+          157,
+          57,
+          57
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          14,
+          5,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.07399324293474369,
+        "version": 35,
+        "time": 1795672717.3614485
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000141",
+        "rewards": [
+          0.16,
+          0.1,
+          0.12000000000000001,
+          0.06
+        ],
+        "lengths": [
+          91,
+          82,
+          81,
+          75
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          6,
+          7,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.0360555127546399,
+        "version": 35,
+        "time": 1795672717.3619938
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000142",
+        "rewards": [
+          0.16,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.12000000000000001
+        ],
+        "lengths": [
+          88,
+          100,
+          90,
+          97
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          7,
+          7,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.01732050807568877,
+        "version": 35,
+        "time": 1795672720.4366772
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000143",
+        "rewards": [
+          0.16,
+          0.12000000000000001,
+          0.16,
+          0.12000000000000001
+        ],
+        "lengths": [
+          117,
+          47,
+          123,
+          44
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          7,
+          9,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.019999999999999997,
+        "version": 35,
+        "time": 1795672720.4369154
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000144",
+        "rewards": [
+          0.12000000000000001,
+          0.12000000000000001,
+          0.1,
+          0.1
+        ],
+        "lengths": [
+          65,
+          78,
+          64,
+          81
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          7,
+          6,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.010000000000000002,
+        "version": 36,
+        "time": 1795672726.0535598
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000145",
+        "rewards": [
+          0.14,
+          0.06,
+          0.12000000000000001,
+          0.14
+        ],
+        "lengths": [
+          81,
+          60,
+          58,
+          103
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          4,
+          7,
+          8
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03278719262151001,
+        "version": 36,
+        "time": 1795672726.0540972
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000146",
+        "rewards": [
+          0.12000000000000001,
+          0.12000000000000001,
+          0.04,
+          0.12000000000000001
+        ],
+        "lengths": [
+          68,
+          71,
+          46,
+          62
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          7,
+          3,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.03464101615137755,
+        "version": 36,
+        "time": 1795672728.3216758
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000147",
+        "rewards": [
+          0.12000000000000001,
+          0.12000000000000001,
+          0.12000000000000001,
+          0.08
+        ],
+        "lengths": [
+          82,
+          76,
+          86,
+          65
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          7,
+          7,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.017320508075688777,
+        "version": 36,
+        "time": 1795672728.3219366
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000148",
+        "rewards": [
+          0.14,
+          0.14,
+          0.19999999999999998,
+          0.19999999999999998
+        ],
+        "lengths": [
+          82,
+          78,
+          97,
+          97
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          8,
+          11,
+          11
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.029999999999999985,
+        "version": 37,
+        "time": 1795672733.7170768
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000149",
+        "rewards": [
+          0.12000000000000001,
+          0.1,
+          0.06,
+          0.12000000000000001
+        ],
+        "lengths": [
+          100,
+          82,
+          52,
+          86
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          6,
+          4,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.024494897427831785,
+        "version": 37,
+        "time": 1795672733.7176325
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000150",
+        "rewards": [
+          0.12000000000000001,
+          0.08,
+          0.08,
+          0.06
+        ],
+        "lengths": [
+          67,
+          68,
+          79,
+          51
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          5,
+          5,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.02179449471770337,
+        "version": 37,
+        "time": 1795672735.9310887
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000151",
+        "rewards": [
+          0.19999999999999998,
+          0.12000000000000001,
+          0.16,
+          0.16
+        ],
+        "lengths": [
+          90,
+          61,
+          76,
+          88
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          11,
+          7,
+          9,
+          9
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.02828427124746189,
+        "version": 37,
+        "time": 1795672735.9313781
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000152",
+        "rewards": [
+          0.08,
+          0.14,
+          0.08,
+          0.06
+        ],
+        "lengths": [
+          49,
+          87,
+          57,
+          47
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          8,
+          5,
+          4
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.030000000000000006,
+        "version": 38,
+        "time": 1795672740.9188976
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000153",
+        "rewards": [
+          0.14,
+          0.21999999999999997,
+          0.06,
+          0.14
+        ],
+        "lengths": [
+          78,
+          79,
+          54,
+          54
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          12,
+          4,
+          8
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.05656854249492379,
+        "version": 38,
+        "time": 1795672740.919442
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000154",
+        "rewards": [
+          0.08,
+          0.19999999999999998,
+          0.14,
+          0.16
+        ],
+        "lengths": [
+          72,
+          98,
+          77,
+          85
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          11,
+          8,
+          9
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.043301270189221926,
+        "version": 38,
+        "time": 1795672743.35721
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000155",
+        "rewards": [
+          0.06,
+          0.04,
+          0.1,
+          0.1
+        ],
+        "lengths": [
+          43,
+          28,
+          64,
+          75
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          4,
+          3,
+          6,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.02598076211353316,
+        "version": 38,
+        "time": 1795672743.357457
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000156",
+        "rewards": [
+          0.08,
+          0.1,
+          0.1,
+          0.12000000000000001
+        ],
+        "lengths": [
+          63,
+          75,
+          70,
+          61
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          5,
+          6,
+          6,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.014142135623730954,
+        "version": 39,
+        "time": 1795672747.7136788
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000157",
+        "rewards": [
+          0.12000000000000001,
+          0.14,
+          0.12000000000000001,
+          0.08
+        ],
+        "lengths": [
+          84,
+          70,
+          74,
+          61
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          7,
+          8,
+          7,
+          5
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.02179449471770337,
+        "version": 39,
+        "time": 1795672747.7142203
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000158",
+        "rewards": [
+          0.04,
+          0.1,
+          0.08,
+          0.04
+        ],
+        "lengths": [
+          26,
+          63,
+          68,
+          35
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          3,
+          6,
+          5,
+          3
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.025980762113533163,
+        "version": 39,
+        "time": 1795672749.911634
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000159",
+        "rewards": [
+          0.16,
+          0.06,
+          0.1,
+          0.1
+        ],
+        "lengths": [
+          93,
+          37,
+          61,
+          57
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          9,
+          4,
+          6,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.035707142142714254,
+        "version": 39,
+        "time": 1795672749.9118667
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000160",
+        "rewards": [
+          0.21999999999999997,
+          0.1,
+          0.14,
+          0.12000000000000001
+        ],
+        "lengths": [
+          98,
+          72,
+          74,
+          44
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          12,
+          6,
+          8,
+          7
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.04555216789572148,
+        "version": 40,
+        "time": 1795672754.9683876
+      },
+      {
+        "seed": "ALPHA_RL_TRAIN_22_00000161",
+        "rewards": [
+          0.14,
+          0.1,
+          0.14,
+          0.1
+        ],
+        "lengths": [
+          92,
+          54,
+          78,
+          47
+        ],
+        "victories": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "floors": [
+          8,
+          6,
+          8,
+          6
+        ],
+        "truncated": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "complete": true,
+        "informative": true,
+        "retained": true,
+        "reward_std": 0.020000000000000004,
+        "version": 40,
+        "time": 1795672754.968886
+      }
+    ],
+    "learner_alive": true
+  }
+}

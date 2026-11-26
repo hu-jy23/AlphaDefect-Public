@@ -1,0 +1,75 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AlphaDefect · 三台服务器的算法实验</title>
+<style>
+:root{color-scheme:light;--ink:#243b43;--muted:#5d7178;--line:#d8e4e4;--green:#11695b;--blue:#eef4fa}
+*{box-sizing:border-box}body{margin:0;background:#f3f6f5;color:var(--ink);font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}
+main{max-width:1000px;margin:auto;padding:35px 20px 55px}h1{font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.3;margin:.4em 0}h2{font-size:1.35rem;margin:0 0 14px}h3{font-size:1.05rem;margin:0}
+header{margin-bottom:25px}p{margin:.65em 0}.lead{font-size:1.12rem}.meta,.source{font-size:.86rem;color:var(--muted)}
+section{background:white;border:1px solid var(--line);border-radius:12px;padding:clamp(17px,3vw,28px);margin:18px 0}
+a{color:var(--green);text-underline-offset:.2em}code{font:.87em/1.7 ui-monospace,"Cascadia Code",monospace;overflow-wrap:anywhere}
+table{width:100%;border-collapse:collapse;text-align:left}th,td{border-bottom:1px solid var(--line);padding:10px;vertical-align:top}thead{background:var(--blue)}.table{overflow:auto}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:16px 0}.cards article{padding:15px;background:var(--blue);border-radius:8px}.cards p{font-size:.95rem}
+.note{padding:12px 16px;background:#eaf5ef;border-left:4px solid var(--green);margin:16px 0}
+details{border:1px solid var(--line);padding:12px 16px;border-radius:8px;margin-top:14px}summary{cursor:pointer;font-weight:650}details[open] summary{margin-bottom:12px}
+pre{background:#f3f6f8;padding:14px;overflow:auto;border-radius:7px}ul{padding-left:1.3em}li{margin:.35em 0}
+@media(max-width:650px){.cards{grid-template-columns:1fr}.wide{min-width:650px}}
+@media print{main{max-width:none}body{background:white}tr,.cards article,.note{break-inside:avoid}}
+</style></head><body><main>
+<header><p class="meta">2026-11-26 · 游戏 v0.114.0 · 启动验收</p><h1>同一套游戏，三种学习办法</h1>
+<p class="lead">AlphaDefect 已 fork 到 <a href="https://github.com/hu-jy23/AlphaDefect-Public">hu-jy23/AlphaDefect-Public</a>。GRPO、DAPO 和 DSPO 各有一个分支，各在一台服务器上训练。</p>
+<p>这次共用原版约 1962 万参数模型和同一份随机初始权重。每个实验最多采样 1,048,576 次决策，或累计训练 2 小时，先到哪项就保存结束。</p></header>
+
+<section><h2>三台机器已经在跑什么</h2>
+<p class="meta">数据快照 2026-11-26 13:59:17.488969+08:00。采样数包括筛掉的组和已收集、尚待更新的经历；已训练数记录真正用于更新的部分。</p>
+<div class="table"><table class="wide"><thead><tr><th>算法与分支</th><th>服务器</th><th>完成更新</th><th>已采样决策</th><th>已训练决策</th><th>筛掉的组</th></tr></thead><tbody><tr><th><a href="https://github.com/hu-jy23/AlphaDefect-Public/tree/rl/grpo">GRPO</a></th><td>AutoDL RTX 3090</td><td>40</td><td>40,559</td><td>40,000</td><td>0</td></tr><tr><th><a href="https://github.com/hu-jy23/AlphaDefect-Public/tree/rl/dapo">DAPO</a></th><td>Primary RTX 3090</td><td>46</td><td>47,105</td><td>46,306</td><td>4</td></tr><tr><th><a href="https://github.com/hu-jy23/AlphaDefect-Public/tree/rl/dspo">DSPO</a></th><td>AutoDL RTX 3080 Ti</td><td>35</td><td>34,585</td><td>33,769</td><td>2</td></tr></tbody></table></div>
+<p>三组都已产生有效梯度，权重有实际变化，检查点数值正常。原先由我在 AutoDL 3090 启动的 PPO 已保存后停止；主服务器的其他任务保留。</p>
+<p class="source"><a href="evidence/summary.json">运行快照</a> · <a href="https://github.com/hu-jy23/AlphaDefect-Public/blob/main/docs/experiments/group_policy/Launch_20261126.md">GitHub 启动记录</a></p>
+</section>
+
+<section><h2>它们怎么从一次冒险中学习</h2>
+<p>取同一个开局种子，让模型用自己的策略独立玩 4 遍。起点一致，之后的选牌、路线和战斗会自然分岔。把这 4 局的分数放在一起，得到“这一局比同组其他局好多少”。这个组内优势会用于更新两类动作头。</p>
+<div class="cards">
+<article><h3>GRPO</h3><p>每步单独检查概率变化，裁剪过大的更新。一局里的各步先平均，再让每局占相同权重。另加对初始策略的 KL 约束。</p></article>
+<article><h3>DAPO</h3><p>放宽正向概率变化上限，去掉组内全同分的样本，按所有决策平均损失。还包含达到长度上限附近的扣分。</p></article>
+<article><h3>DSPO</h3><p>把整局各步的概率变化合成一个几何均值，再对整局统一裁剪。它也去掉组内全同分的样本。</p></article>
+</div>
+<p>这里的 DSPO 指论文 <em>Stable and Efficient Policy Optimization for Agentic Search and Reasoning</em>。其官方仓库尚未发布训练代码，本次按论文目标自行实现了游戏版本。</p>
+<p class="source"><a href="https://arxiv.org/html/2402.03300v3">GRPO 原论文</a> · <a href="https://arxiv.org/html/2503.14476v2">DAPO 原论文</a> · <a href="https://arxiv.org/html/2510.09255v4">DSPO 原论文</a></p>
+<details><summary>DSPO 的整局计算，怎么放进有限显存</summary>
+<p>先完整算出每一局的平均对数概率变化，得到该局统一的更新系数；再分小批重新前向，把这个系数传回各步。两遍之间模型参数保持一致。这样保留了整局目标，显存由每个小批的大小决定。回归测试把这种分块梯度与一次性反传的结果进行了比较。</p>
+</details>
+</section>
+
+<section><h2>这次实验明确采用了哪些设置</h2>
+<p><strong>分数统一。</strong>三个算法都使用爬层和 Boss 里程碑作为整局分数。每爬一层 0.02，进入第二幕和第三幕分别 0.1、0.5，打过第三幕第一个 Boss 为 1.5，最终通关再得 2 + 2。DAPO 按定义另有过长扣分。</p>
+<p><strong>筛选依据是组内分数差异。</strong>从随机模型开始，单看 A10 通关会出现大量全败组，优势为零。论文里的二元正确率在这里扩展成上述整局分数；同组全同分时，DAPO 和 DSPO 换一组继续采。所有采样开销均计入预算。</p>
+<p><strong>这轮收集完整冒险。</strong>每个开局 4 个策略样本，一次并行 2 个开局，共 8 个游戏进程。每次更新目标为 4 个有效组，最多尝试 16 波采样。Adam、Muon、模型、观测和基本分数在三组中保持一致。</p>
+<div class="note">原先 PPO 的配方同时包含整局、战斗练习、价值头和辅助任务。这三组采用完整冒险的组内优势，价值头和辅助头没有训练损失。因此，和原先 PPO 的成绩比较时，需要把这些配方变化一起考虑。</div>
+<p>硬件和 PyTorch 版本也有差异。GRPO 使用 PyTorch 2.8.0，另外两组为 2.9.0；初始检查点的文件哈希完全相同。主服务器还有其他任务，吞吐会受到资源竞争影响。</p>
+<p class="source"><a href="https://github.com/hu-jy23/AlphaDefect-Public/blob/main/docs/experiments/group_policy/Plan.md">完整实验协议</a> · <a href="https://github.com/hu-jy23/AlphaDefect-Public/blob/rl/grpo/configs/group_policy/train.json">GRPO 配置</a> · <a href="https://github.com/hu-jy23/AlphaDefect-Public/blob/rl/dapo/configs/group_policy/train.json">DAPO 配置</a> · <a href="https://github.com/hu-jy23/AlphaDefect-Public/blob/rl/dspo/configs/group_policy/train.json">DSPO 配置</a></p>
+</section>
+
+<section><h2>这次已经验证了什么</h2>
+<ul>
+<li>6 项定向回归通过，覆盖组内归一化、两种损失权重、不对称裁剪、DSPO 完整轨迹梯度、KL 和过长扣分，以及 Boss 计数列。</li>
+<li>每个算法完成一轮小样本更新，保存后恢复，再完成第二轮。模型、Adam、Muon、采样预算和随机数状态均可接续；正在游玩的游戏在恢复时重新开局。</li>
+<li>正式运行的模型权重确实变化，价值头权重保持原值，模型状态数值有限。三台机器运行相同版本的训练代码。</li>
+<li>每个正式检查点完成了相同 4 个种子的整局读档推理，均为 0/4 通关，卡住数为 0。这个样本用于验证执行链路，模型强度尚待后续评估。</li>
+</ul>
+<p class="source"><a href="evidence/grpo.json">GRPO 证据</a> · <a href="evidence/dapo.json">DAPO 证据</a> · <a href="evidence/dspo.json">DSPO 证据</a></p>
+</section>
+
+<section><h2>后续从哪里接手</h2>
+<p>三台机器上的部署根目录都是 <code>/root/autodl-tmp/alphadefect</code>。其中 <code>checkouts/算法名</code> 是该算法的 Git 分支；<code>src</code> 是这次实际运行的冻结副本。</p>
+<div class="table"><table><thead><tr><th>文件</th><th>用途</th></tr></thead><tbody>
+<tr><th><code>rl-runs/算法名/status.json</code></th><td>运行状态、进程号、更新数、已采样与已训练决策数。</td></tr>
+<tr><th><code>rl-runs/算法名/groups.jsonl</code></th><td>每个开局组的种子、各局长度、分数、是否被筛掉。</td></tr>
+<tr><th><code>rl-runs/算法名/log.jsonl</code></th><td>每次更新的损失、梯度、训练样本和显存峰值。</td></tr>
+<tr><th><code>rl-runs/算法名/latest.pt</code></th><td>模型、优化器、计数、开局游标、随机数状态和累计时间。</td></tr>
+<tr><th><code>rl-configs/算法名.json</code></th><td>本次正式运行的冻结配置。</td></tr>
+</tbody></table></div>
+<details><summary>重启方式</summary><p>在对应服务器执行，脚本会检查单实例锁并使用原运行目录。已有检查点时接续训练，累计预算继续计算。</p>
+<pre><code>bash /root/autodl-tmp/alphadefect/src/tools/group_policy/start.sh grpo</code></pre>
+<p>DAPO 和 DSPO 分别把最后一个参数换成对应算法名。</p></details>
+</section>
+</main></body></html>
