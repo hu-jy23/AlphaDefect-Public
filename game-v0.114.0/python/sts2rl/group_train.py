@@ -22,6 +22,7 @@ import torch
 from sts2env import VecEnv
 from sts2env.protocol import format_for
 from .content import CATALOG_VERSION
+from .catalog import Catalog
 from .features import Ragged, collate_ragged
 from .group_objectives import (
     action_weights, clipped_terms, overlong_penalty, reference_kl,
@@ -242,7 +243,7 @@ def checkpoint(path, net, optimizer, cfg, counters):
         muon=optimizer.muon.state_dict(), config=dict(model=cfg["model"]),
         version=counters["updates"], total_steps=counters["sampled_decisions"],
         counters=counters, obs_format=format_for(cfg["character"]),
-        catalog_version=CATALOG_VERSION,
+        catalog_version=CATALOG_VERSION, vocab_n=Catalog().vocab_size,
         content_names=list(getattr(net, "content_names", ())),
         torch_rng=torch.get_rng_state(), cuda_rng=torch.cuda.get_rng_state_all(),
     )
